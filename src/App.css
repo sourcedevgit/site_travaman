@@ -17,7 +17,8 @@ display:  flex  ;
 }
 
 .button_container{
-  padding-left: 400px;
+  padding-left: 300px;
+  padding-right: 400px;
 }
 
 .button_container a {
@@ -34,9 +35,7 @@ a:visited {
   color: rgb(0, 0, 0);
 }
 
-.sb_container{
-padding-left: 500PX;
-}
+
 
 .sb_container img{
 padding-left: 10px;

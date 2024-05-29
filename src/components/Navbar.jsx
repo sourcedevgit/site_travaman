@@ -9,10 +9,10 @@ export const Navbar = () => {
             <img className = "logo" src="trava.svg" alt="" />
             <div className="name">TRAVAMAN</div>
             <div className="button_container">
-                <a href="">Home</a>
-                <a href="">Shop</a>
-                <a href="">Plant Care</a>
-                <a href="">Blogs</a>
+                <a href="#/">Home</a>
+                <a href="#/">Shop</a>
+                <a href="#/">Plant Care</a>
+                <a href="#/">Blogs</a>
             </div>
             <div className="sb_container">
             <img src="search.svg" alt="" />
