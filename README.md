@@ -5,17 +5,7 @@
 
 
 ```
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Я РУССКИ да да да даня да да</h1>
-    </body>
-    </html>
+git clone https://github.com/sourcedevgit/site_travaman.git
 ```
 
 <h2>Чё мы натворили:</h2>
