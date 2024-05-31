@@ -37,11 +37,23 @@ padding-left:18px;
 padding-top:14px;
 `;
 
-const Wrapper = styled.div`
+const Wrapper_header = styled.div`
+font-weight: 700;
 padding-left:18px;
+padding-top:14px;
+`;
+
+const Wrapper = styled.div`
+
+display: flex;
+font-size: 15px;
+line-height: 50px;
+padding-left:30px;
+
 & span {
         color: #46A358;
         font-weight: 600;
+        margin-left:10px;
     }
 `;
 
@@ -79,10 +91,12 @@ function Filtres() {
                 <Filter>
                     <p>Accessories </p><span>(40)</span>
                 </Filter>
-                <Wrapper>
+                <Wrapper_header>
                     <p>Price Range</p>
-
+                </Wrapper_header>
+                <Wrapper>
                     <p>Price:</p> <span>$39 - $1230</span>
+
 
                 </Wrapper>
             </All_container>
