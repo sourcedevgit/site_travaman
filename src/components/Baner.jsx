@@ -14,7 +14,7 @@ display: flex;
 width: 1200px;
 height: 450px;
 background-color: #F5F5F5;
-border-radius: 40px;
+border-radius: 25px;
 margin-top: 20px;
 & img {
         padding-bottom: 100px;

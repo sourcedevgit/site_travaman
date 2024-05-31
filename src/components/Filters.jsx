@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
 
-
+import sale from "/SaleBanner.png"; 
 const Container = styled.div`
 display: flex;
 
 width: 310px;
 height: 774px;
 background-color: #F5F5F5;
-border-radius: 30px;
+border-radius: 25px;
 margin-top: 47px;
 margin-left: 180px;
 
@@ -17,7 +17,7 @@ const Filter = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr;
 font-size: 15px;
-line-height: 50px;
+line-height: 45px;
 padding-left:30px;
 
 & span {
@@ -57,8 +57,26 @@ padding-left:30px;
     }
 `;
 
+const Filter_header2 = styled.div`
+font-weight: 700;
+padding-left: 18px;
+padding-top: 120px;
+`;
 
-
+const Filter2 = styled.div`
+display: grid;
+font-size: 15px;
+grid-template-columns: 1fr 1fr;
+font-weight: 400;
+padding-left: 30px;
+line-height: 35px;
+padding-top: 7px;
+& span {
+        color: #46A358;
+        font-weight: 600;
+        padding-left: 90px;
+    }
+`;
 
 function Filtres() {
     return (
@@ -96,12 +114,21 @@ function Filtres() {
                 </Wrapper_header>
                 <Wrapper>
                     <p>Price:</p> <span>$39 - $1230</span>
-
-
                 </Wrapper>
+                <Filter_header2>
+                    <p>Size</p>
+                </Filter_header2>
+                <Filter2>
+                <p>Small </p><span>(119)</span>
+                </Filter2>
+                <Filter2>
+                <p>Medium </p><span>(86)</span>
+                </Filter2>
+                <Filter2>
+                <p>Large </p><span>(78)</span>
+                </Filter2>
+                <img src={sale} alt="SaleBanner" />
             </All_container>
-
-
         </Container>
     )
 }
