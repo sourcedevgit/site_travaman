@@ -3,7 +3,13 @@ import styled from 'styled-components';
 
 
 const Container = styled.div`
+display: flex;
 
+width: 1200px;
+height: 450px;
+background-color: #F5F5F5;
+border-radius: 40px;
+margin-top: 20px;
 `;
 
 
