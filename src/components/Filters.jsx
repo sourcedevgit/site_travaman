@@ -10,7 +10,7 @@ height: 774px;
 background-color: #F5F5F5;
 border-radius: 30px;
 margin-top: 47px;
-margin-left: 120px;
+margin-left: 180px;
 
 `;
 const Filter = styled.div`
@@ -37,39 +37,57 @@ padding-left:18px;
 padding-top:14px;
 `;
 
+const Wrapper = styled.div`
+padding-left:18px;
+& span {
+        color: #46A358;
+        font-weight: 600;
+    }
+`;
+
+
+
 
 function Filtres() {
     return (
         <Container>
             <All_container>
                 <Filter_header>
-                <p>Categories</p>
+                    <p>Categories</p>
                 </Filter_header>
                 <Filter>
-                <p>House Plants </p><span>(33)</span>
+                    <p>House Plants </p><span>(33)</span>
                 </Filter>
                 <Filter>
-                <p>Potter Plants </p><span>(12)</span>
+                    <p>Potter Plants </p><span>(12)</span>
                 </Filter>
                 <Filter>
-                <p>Seeds </p><span>(64)</span>
+                    <p>Seeds </p><span>(64)</span>
                 </Filter>
                 <Filter>
-                <p>Small Plants </p><span>(36)</span>
+                    <p>Small Plants </p><span>(36)</span>
                 </Filter>
                 <Filter>
-                <p>Big Plants </p><span>(15)</span>
-                </Filter>  
+                    <p>Big Plants </p><span>(15)</span>
+                </Filter>
                 <Filter>
-                <p>Trerrariums </p><span>(35)</span>
-                </Filter>  
+                    <p>Trerrariums </p><span>(35)</span>
+                </Filter>
                 <Filter>
-                <p>Gardening </p><span>(29)</span>
-                </Filter>  
+                    <p>Gardening </p><span>(29)</span>
+                </Filter>
                 <Filter>
-                <p>Accessories </p><span>(40)</span>
-                </Filter>  
+                    <p>Accessories </p><span>(40)</span>
+                </Filter>
+                <Wrapper>
+                    <p>Price Range</p>
+
+                    <p>Price:</p> <span>$39 - $1230</span>
+
+                </Wrapper>
             </All_container>
+
+
         </Container>
     )
 }
