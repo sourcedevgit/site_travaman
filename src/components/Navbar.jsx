@@ -99,7 +99,7 @@ export const Navbar = () => {
           <ButtonLink href="#/">Plant Care</ButtonLink>
           <ButtonLink href="#/">Blogs</ButtonLink>
         </ButtonContainer>
-        <SbContainer >
+        <SbContainer>
           <img src={search} alt="Search" />
 
           <img src={basket} alt="Basket" />
