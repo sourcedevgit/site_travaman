@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import basket from "/basket.svg"; 
+import trava from "/trava.svg"; 
+import search from "/search.svg"; 
+import Login from "/Login.svg"; 
+
 // Styled components
 const Container = styled.div`
     height: 100px;
@@ -84,7 +89,7 @@ export const Navbar = () => {
   return (
     <Container>
       <InnerContainer>
-        <Logo  src="trava.svg" alt="Logo" />
+        <Logo  src={trava} alt="Logo" />
         <Name>TRAVAMAN</Name>
 
         <ButtonContainer>
@@ -95,13 +100,13 @@ export const Navbar = () => {
           <ButtonLink href="#/">Blogs</ButtonLink>
         </ButtonContainer>
         <SbContainer >
-          <img src="search.svg" alt="Search" />
+          <img src={search} alt="Search" />
 
-          <img src="basket.svg" alt="Basket" />
+          <img src={basket} alt="Basket" />
         </SbContainer>
 
         <LoginButton>
-          <img src="Login.svg" alt="Login" />
+          <img src={Login} alt="Login" />
           <p>Login</p>
         </LoginButton>
       </InnerContainer>

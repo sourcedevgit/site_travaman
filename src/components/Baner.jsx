@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 
+import plants from "/plants.png"
+
 const Container = styled.div`
 display: flex;
 justify-content: center;
@@ -88,7 +90,7 @@ function Baner() {
             </Text3>
             <ShopButton>SHOP NOW</ShopButton>
         </Text_Container>
-        <img src="plants.png" alt="Plants" />
+        <img src={plants} alt="Plants" />
     </InnerContainer>
 </Container>
     

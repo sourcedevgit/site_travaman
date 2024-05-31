@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-
+import card1 from "/card1.png"; 
 
 const Container = styled.div`
 
@@ -41,7 +41,7 @@ function Item() {
     return (
         <Container>
             <Card1>
-            <img src="card1.png" alt="card1" />
+            <img src={card1} alt="card1" />
             <p>Barberton Daisy </p><span>$119.00</span>
             </Card1>
             
