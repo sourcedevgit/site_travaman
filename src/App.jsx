@@ -1,9 +1,29 @@
 import React from 'react'
 import Home from './pages/Home'
+import Shop from './pages/Shop'
 
-export const App = () => {
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+const router = createBrowserRouter([
+{
+  path: "/",
+  element: <Home />
+},
+{
+  path: "shop",
+  element: <Shop />
+},
+
+
+])
+
+const App = () => {
   return (
-    <Home/>
+    <RouterProvider router={router}/>
   )
 }
 

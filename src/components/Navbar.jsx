@@ -8,10 +8,7 @@ import Login from "/Login.svg";
 
 // Styled components
 const Container = styled.div`
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 `;
 
 const Logo = styled.img`
@@ -40,7 +37,7 @@ const ButtonContainer = styled.div`
     display: flex;
 `;
 
-const ButtonLink = styled.a`
+const TextLink = styled.a`
     font-size: 20px;
     margin-left: 50px;
     text-decoration: none;
@@ -84,7 +81,10 @@ const LoginButton = styled.button`
     }
 `;
 
-// React component
+
+
+
+
 export const Navbar = () => {
   return (
     <Container>
@@ -93,11 +93,11 @@ export const Navbar = () => {
         <Name>TRAVAMAN</Name>
 
         <ButtonContainer>
-          <ButtonLink href="#/">Home</ButtonLink>
-          <ButtonLink href="#/">Shop</ButtonLink>
+          <TextLink href="/">Home</TextLink>
+          <TextLink href="/shop">Shop</TextLink>
 
-          <ButtonLink href="#/">Plant Care</ButtonLink>
-          <ButtonLink href="#/">Blogs</ButtonLink>
+          <TextLink href="/">Plant Care</TextLink>
+          <TextLink href="/">Blogs</TextLink>
         </ButtonContainer>
         <SbContainer>
           <img src={search} alt="Search" />
