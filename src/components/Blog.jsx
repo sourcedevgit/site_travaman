@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import flov from "/flov.png"
+import flov1 from "/flov1.png"
 
 const Container = styled.div`
 display:flex;
@@ -14,40 +14,56 @@ margin-top: 219px;
 margin-left: 280px;
 width: 268px;
 height: 362px;
-background-color: #575757;
+background-color: #FBFBFB;
 border-radius: 5px;
 `;
 
 const Ph = styled.div`
 & img {
-        height: 268px;
-        width: 195px;
-        position: relative;
-        bottom: 50px;
+        height: 195px;
+        width: 268px;
+
 
     }
 `;
 
 const Text_Container = styled.div`
+
+
 `;
 
 const Text1 = styled.div`
-font-weight: 900;
-letter-spacing: 10%;
-text-align:right;
-margin-top: 230px;
-font-size: 20px;
-line-height: 24px;
-color: #3D3D3D;
+
+font-weight: 400;
+text-align:center;
+
+font-size: 14px;
+
+color: #46A358;
 `;
 
 const Text2 = styled.div`
+margin-left: 15px;
+margin-top: 4px;
+font-weight: 700;
+font-size: 20px;
+color: #3D3D3D;
 `;
 
 const Text3 = styled.div`
+margin-left: 15px;
+margin-top: 4px;
+font-weight: 400;
+font-size: 14px;
+color: #3D3D3D;
 `;
 
 const Text4 = styled.div`
+margin-left: 15px;
+margin-top: 9px;
+font-weight: 500;
+font-size: 14px;
+color: #3D3D3D;
 `;
 
 function Blog() {
@@ -55,14 +71,13 @@ function Blog() {
         <Container>
             <InnerContainer>
                 <Ph>
-                    <img src={flov} alt="Flov" />
-                </Ph>
+                    <img src={flov1} alt="Flov" />
                 <Text_Container>
                     <Text1>
                     September 12  I Read in 6 minutes
                     </Text1>
                     <Text2>
-                    Cactus & Succulent
+                    Cactus & Succulent Care Tips
                     </Text2>
                     <Text3>
                     Cacti are succulents are easy care plants for any home or patio.
@@ -71,6 +86,7 @@ function Blog() {
                     Read More
                     </Text4>
                 </Text_Container>
+                </Ph>
             </InnerContainer>
         </Container>
     )
