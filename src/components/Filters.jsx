@@ -10,7 +10,7 @@ height: 774px;
 background-color: #F5F5F5;
 border-radius: 25px;
 margin-top: 47px;
-margin-left: 180px;
+margin-left: 300px;
 
 `;
 const Filter = styled.div`

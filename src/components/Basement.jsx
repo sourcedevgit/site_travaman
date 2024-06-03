@@ -2,19 +2,27 @@ import React from 'react'
 import styled from 'styled-components';
 
 import plant1 from "/plant1.png"
+import plant2 from "/plant2.png"
+
 
 const Container = styled.div`
+display:flex;
+`;
+
+const InnerContainer = styled.div`
 display: flex;
-margin-top: 271px;
-margin-left: 170px;
+
+margin-top: 219px;
+margin-left: 300px;
 width: 586px;
-height: 250px;
-background-color: #9e9e9e;
+height: 250px;background-color: #FBFBFB;
 border-radius: 15px;
 `;
 
 const Ph = styled.div`
-
+& button {
+        background-color: #46A358;
+    }
 & img {
         height: 292px;
         width: 292px;
@@ -29,37 +37,80 @@ font-weight: 900;
 letter-spacing: 10%;
 text-transform: uppercase;
 text-align: right;
-padding-right: 34px;
+padding-right: 25px;
 padding-top: 37px;
 font-size:18px;
+line-height: 24px;
 color: #3D3D3D;
 `;
 
 const Text2 = styled.p`
 color: #3D3D3D;
-font-weight: 500;
-padding-left: 269px;
-padding-bottom: 111px;
+font-weight: 400;
+line-height: 24px;
+padding-top:9px;
 font-size:14px;
 `;
 
 const Text_Container = styled.div`
+
+`;
+
+const ShopButton = styled.button`
+    margin-top: 25px;
+    margin-left: 129px;
+    color: white;
+    height: 35px;
+    width: 135px;
+    border-radius: 6px;
+    border: none;
+    background-color: #46A358;
+    align-items: center;
+    font-size: 14;
+    font-weight: 500;
+    
+`;
+const InnerContainer1 = styled.div`
+display: flex;
+
+margin-top: 219px;
+margin-left: 100px;
+width: 586px;
+height: 250px;background-color: #FBFBFB;
+border-radius: 15px;
 `;
 
 function Basement() {
     return (
         <Container>
-            <Ph>
-                <img src={plant1} alt="Plant1" />
-            </Ph>
-            <Text_Container>
-                <Text1>
-                    Summer cactus & succulents
-                </Text1>
-                <Text2>
-                <p>We are an online plant shop offering a</p> <p>wide range of cheap and trendy plants</p> 
-                </Text2>
-            </Text_Container>
+            <InnerContainer>
+                <Ph>
+                    <img src={plant1} alt="Plant1" />
+                </Ph>
+                <Text_Container>
+                    <Text1>
+                        Summer cactus & succulents
+                    </Text1>
+                    <Text2>
+                        We are an online plant shop offering a wide range of cheap and trendy plants
+                    </Text2>
+                    <ShopButton>Find More</ShopButton>
+                </Text_Container>
+            </InnerContainer>
+            <InnerContainer1>
+                <Ph>
+                    <img src={plant2} alt="Plant2" />
+                </Ph>
+                <Text_Container>
+                    <Text1>
+                        Styling Trends & much more
+                    </Text1>
+                    <Text2>
+                        We are an online plant shop offering a wide range of cheap and trendy plants
+                    </Text2>
+                    <ShopButton>Find More</ShopButton>
+                </Text_Container>
+            </InnerContainer1>
         </Container>
     )
 }
