@@ -13,7 +13,7 @@ const InnerContainer = styled.div`
 display: flex;
 
 margin-top: 219px;
-margin-left: 300px;
+margin-left: 280px;
 width: 586px;
 height: 250px;background-color: #FBFBFB;
 border-radius: 15px;
@@ -74,7 +74,7 @@ const InnerContainer1 = styled.div`
 display: flex;
 
 margin-top: 219px;
-margin-left: 100px;
+margin-left: 120px;
 width: 586px;
 height: 250px;background-color: #FBFBFB;
 border-radius: 15px;
