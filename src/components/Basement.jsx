@@ -12,7 +12,7 @@ display:flex;
 const InnerContainer = styled.div`
 display: flex;
 
-margin-top: 219px;
+margin-top: 150px;
 margin-left: 280px;
 width: 586px;
 height: 250px;background-color: #FBFBFB;
@@ -73,7 +73,7 @@ const ShopButton = styled.button`
 const InnerContainer1 = styled.div`
 display: flex;
 
-margin-top: 219px;
+margin-top: 150px;
 margin-left: 120px;
 width: 586px;
 height: 250px;background-color: #FBFBFB;
