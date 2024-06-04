@@ -8,7 +8,7 @@ import flov4 from "/flov4.png"
 
 const Container = styled.div`
 padding-top:121px;
-
+text-align:center;
 `;
 
 const InnerContainer = styled.div`
@@ -33,18 +33,19 @@ const Ph = styled.div`
 `;
 
 const Text_Container = styled.div`
+
 `;
 
 const All_container = styled.div`
 
 display: inline;
-text-align:center;
+
 font-size:30px;
 font-weight: 700;
 & span{
     font-size: 14px;
     font-weight: 400;
-    margin-left: 670px;
+
     margin-top:15px;
 }
 

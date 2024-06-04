@@ -5,6 +5,7 @@ import Filtres from './Filters';
 
 const Container = styled.div`
 display: flex;
+justify-content: center;
 `;
 
 const GridContainer = styled.div`

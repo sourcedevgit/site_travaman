@@ -7,13 +7,14 @@ import plant2 from "/plant2.png"
 
 const Container = styled.div`
 display:flex;
+justify-content: center;
 `;
 
 const InnerContainer = styled.div`
 display: flex;
 
 margin-top: 300px;
-margin-left: 280px;
+
 width: 586px;
 height: 250px;background-color: #FBFBFB;
 border-radius: 15px;
