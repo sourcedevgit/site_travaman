@@ -10,7 +10,10 @@ import Login from "/Login.svg";
 const Container = styled.div`
 
 `;
-
+const Logobox = styled.div`
+display: flex;
+width: 100px;
+`;
 const Logo = styled.img`
     position: relative;
     top: -7px; 
@@ -27,21 +30,25 @@ const Name = styled.div`
 
 const InnerContainer = styled.div`
     padding-top: 30px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    align-items: center;
     padding-left: 120px;
+    column-gap: 10px;
+
 `;
 
 const ButtonContainer = styled.div`
-    padding-left: 300px;
-    padding-right: 400px;
+      justify-content: center;
     display: flex;
 `;
 
 const TextLink = styled.a`
     font-size: 20px;
-    margin-left: 50px;
+    margin-right: 50px;
     text-decoration: none;
     color: #3D3D3D;
+    white-space: nowrap;
 
     &:visited {
         color: rgb(0, 0, 0);
@@ -50,7 +57,7 @@ const TextLink = styled.a`
 
 const SbContainer = styled.div`
     display: flex;
-
+    justify-content: flex-end;
     & img {
       height: 30px;
       width: 30px;
@@ -91,9 +98,11 @@ export const Navbar = () => {
   return (
     <Container>
       <InnerContainer>
-        <Logo  src={trava} alt="Logo" />
-        <Name>TRAVAMAN</Name>
-
+        <Logobox>
+          <Logo  src={trava} alt="Logo" />
+          <Name>TRAVAMAN</Name>
+        </Logobox>
+        
         <ButtonContainer>
           <TextLink href="/">Home</TextLink>
           <TextLink href="/shop">Shop</TextLink>
@@ -105,12 +114,13 @@ export const Navbar = () => {
           <img src={search} alt="Search" />
 
           <img src={basket} alt="Basket" />
-        </SbContainer>
-
-        <LoginButton>
+          <LoginButton>
           <img src={Login} alt="Login" />
           <p>Login</p>
         </LoginButton>
+        </SbContainer>
+
+
       </InnerContainer>
     </Container>
   );
