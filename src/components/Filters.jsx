@@ -60,7 +60,7 @@ padding-left:30px;
 const Filter_header2 = styled.div`
 font-weight: 700;
 padding-left: 18px;
-padding-top: 120px;
+padding-top: 100px;
 `;
 
 const Filter2 = styled.div`
@@ -76,6 +76,21 @@ padding-top: 7px;
         font-weight: 600;
         padding-left: 90px;
     }
+`;
+
+const ShopButton = styled.button`
+    margin-top: 25px;
+    margin-left: 29px;
+    color: white;
+    height: 35px;
+    width: 90px;
+    border-radius: 6px;
+    border: none;
+    background-color: #46A358;
+    align-items: center;
+    font-size: 16;
+    font-weight: 700;
+    
 `;
 
 function Filtres() {
@@ -115,6 +130,7 @@ function Filtres() {
                 <Wrapper>
                     <p>Price:</p> <span>$39 - $1230</span>
                 </Wrapper>
+                <ShopButton>Filter</ShopButton>
                 <Filter_header2>
                     <p>Size</p>
                 </Filter_header2>
