@@ -7,14 +7,14 @@ import flov3 from "/flov3.png"
 import flov4 from "/flov4.png"
 
 const Container = styled.div`
-
+padding-top:121px;
 
 `;
 
 const InnerContainer = styled.div`
 position:static;
 
-margin-top: 300px;
+margin-top: 100px;
 margin-right: 44px;
 
 width: 268px;
@@ -36,6 +36,7 @@ const Text_Container = styled.div`
 `;
 
 const All_container = styled.div`
+
 display: inline;
 text-align:center;
 font-size:30px;
@@ -43,6 +44,8 @@ font-weight: 700;
 & span{
     font-size: 14px;
     font-weight: 400;
+    margin-left: 670px;
+    margin-top:15px;
 }
 
 `;
@@ -84,6 +87,7 @@ color: #3D3D3D;
 const Card_container = styled.div`
 display:flex;
 justify-content: center;
+margin-top:-35px;
 `;
 
 function Blog() {
