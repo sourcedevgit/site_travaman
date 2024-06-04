@@ -58,6 +58,7 @@ const TextLink = styled.a`
 const SbContainer = styled.div`
     display: flex;
     justify-content: flex-end;
+    padding-right: 10px;
     & img {
       height: 30px;
       width: 30px;
@@ -106,21 +107,17 @@ export const Navbar = () => {
         <ButtonContainer>
           <TextLink href="/">Home</TextLink>
           <TextLink href="/shop">Shop</TextLink>
-
           <TextLink href="/">Plant Care</TextLink>
           <TextLink href="/">Blogs</TextLink>
-        </ButtonContainer>
+        </ButtonContainer>  
         <SbContainer>
           <img src={search} alt="Search" />
-
           <img src={basket} alt="Basket" />
           <LoginButton>
-          <img src={Login} alt="Login" />
-          <p>Login</p>
-        </LoginButton>
+            <img src={Login} alt="Login" />
+            <p>Login</p>
+          </LoginButton>
         </SbContainer>
-
-
       </InnerContainer>
     </Container>
   );
