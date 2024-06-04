@@ -8,6 +8,7 @@ import stard from "/products/view/Stard.svg";
 
 
 
+
 const Container = styled.div`
 display: flex;
 padding-left: 150px;
@@ -27,6 +28,14 @@ padding-left: 50px;
   font-size: 22px;
   margin-top: 20px;
 }`;
+
+const Line = styled.div`
+  border-bottom: 1px solid #46A358;
+  opacity: 0.5;
+  width: 550px;
+  padding-top: 10px;
+
+`;
 
 const Column = styled.div`
 display: inline;
@@ -84,12 +93,18 @@ display: flex;
 `;
 const Description = styled.div`
 padding-top: 15px;
- font-size: 15px;
-  font-weight: 500;
+font-size: 15px;
+
+width: 570px;
+line-height: 24px;
+
+& h3{
+  font-weight: 400;
+}
 
 & p {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   padding-top: 10px;
 }
 `;
@@ -99,6 +114,7 @@ const Size = styled.div`
 const Buy = styled.div`
 
 `;
+
 function View() {
   return (
     <Container>
@@ -115,7 +131,7 @@ function View() {
         <Price_container>
           <Container_1>
             <Name>Barberton Daisy</Name>
-            <span><p>$</p><Price>190.00</Price></span>
+            <span><p>$</p><Price>119.00</Price></span>
           </Container_1>
           <Review>
             <Stars>
@@ -128,7 +144,7 @@ function View() {
             </Stars>
           </Review>
         </Price_container>
-        
+        <Line></Line>
         <Description>
         <h3>Short Description:</h3>
         <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
