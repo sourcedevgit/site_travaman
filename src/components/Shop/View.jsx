@@ -19,6 +19,7 @@ const Details = styled.div`
 font-family: "M";
 font-size: 28px;
 font-weight: 700;
+padding-left: 50px;
 & span{
 
   display: flex;
@@ -61,8 +62,40 @@ display: flex;
 
 const Stars = styled.div`
 display: flex;
+margin-top: 62px;
+margin-left: 90px;
+align-items: center;
+& img{
+height: 15px;
+width: 15px;
+}
+& p{
+  padding-left: 5px;
+}
+font-size: 15px;
 `;
 
+const Container_1 = styled.div`
+width: 240px;
+height: 60px;
+`;
+const Price_container = styled.div`
+display: flex;
+`;
+const Description = styled.div`
+padding-top: 15px;
+ font-size: 15px;
+  font-weight: 500;
+
+& p {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+`;
+const Size = styled.div`
+
+`;
 const Buy = styled.div`
 
 `;
@@ -79,23 +112,27 @@ function View() {
           </Main_photo>
       </Photos>
       <Details>
-        <Buy>
-        <div>
-          <Name>Barberton Daisy</Name>
-          <span><p>$</p><Price>190.00</Price></span>
-        </div>
-        <Review>
-          <Stars>
-            <img src={stare} alt="" />
-            <img src={stare} alt="" />
-            <img src={stare} alt="" />
-            <img src={stare} alt="" />
-            <img src={stard} alt="" />
-          </Stars>
-          <p>19 Customer Review</p>
-        </Review>
-        </Buy>
-
+        <Price_container>
+          <Container_1>
+            <Name>Barberton Daisy</Name>
+            <span><p>$</p><Price>190.00</Price></span>
+          </Container_1>
+          <Review>
+            <Stars>
+              <img src={stare} alt="" />
+              <img src={stare} alt="" />
+              <img src={stare} alt="" />
+              <img src={stare} alt="" />
+              <img src={stard} alt="" />
+              <p>19 Customer Review</p>
+            </Stars>
+          </Review>
+        </Price_container>
+        
+        <Description>
+        <h3>Short Description:</h3>
+        <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
+        </Description>
 
       </Details>
     </Container>
