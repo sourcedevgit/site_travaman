@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
 padding-left: 120px;
 padding-right: 120px;
+
 `;
 
 
@@ -29,6 +30,7 @@ const Line = styled.div`
 const Container_t = styled.div`
 font-size: 14px;
 font-weight: 400;
+ width: 1200px;
 `;
 
 const Text1 = styled.div`
