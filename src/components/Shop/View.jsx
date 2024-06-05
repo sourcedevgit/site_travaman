@@ -124,7 +124,9 @@ margin-top: 24px;
 const Buy = styled.div`
 
 `;
+const Button_t = styled.button`
 
+`;
 function View() {
   return (
     <Container>
@@ -161,7 +163,12 @@ function View() {
         </Description>
         <Size>
           <p>Size:</p>
-          <span>S M L XL</span>
+          <span>
+            <Button_t>S</Button_t>
+            <Button_t>M</Button_t>
+            <Button_t>L</Button_t>
+            <Button_t>XL</Button_t>
+          </span>
         </Size>
       </Details>
     </Container>
