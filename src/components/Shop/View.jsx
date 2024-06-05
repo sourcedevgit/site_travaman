@@ -173,10 +173,12 @@ function View() {
         <Size>
           <p>Size:</p>
           <span>
+
             <Button_t>S</Button_t>
             <Button_t>M</Button_t>
             <Button_t>L</Button_t>
             <Button_t>XL</Button_t>
+            
           </span>
         </Size>
       </Details>
