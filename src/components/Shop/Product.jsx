@@ -17,6 +17,9 @@ const Line = styled.div`
 
 `;
 
+const Reviews =styled.div`
+`;
+
 const Product_c = styled.div`
 color:  #46A358;
 font-size:20px;
