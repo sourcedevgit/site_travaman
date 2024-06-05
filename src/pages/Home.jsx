@@ -11,7 +11,6 @@ import End from '../components/End'
 
 
 
-
 export const Home = () => {
   return (
     <div>
@@ -20,7 +19,9 @@ export const Home = () => {
         <Items_component/>
         <Basement/>
         <Blog/>
+
         <End/>
+        
 
     </div>
     

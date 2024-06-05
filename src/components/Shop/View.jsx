@@ -125,6 +125,7 @@ const Buy = styled.div`
 
 `;
 
+
 function View() {
   return (
     <Container>
