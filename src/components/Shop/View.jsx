@@ -125,7 +125,14 @@ const Buy = styled.div`
 
 `;
 const Button_t = styled.button`
-
+height: 28px;
+width: 28px;
+border-radius: 20px;
+margin-right: 5px;
+background-color: white;
+color: #EAEAEA;
+border-color: #EAEAEA;
+border-style: solid;
 `;
 function View() {
   return (
