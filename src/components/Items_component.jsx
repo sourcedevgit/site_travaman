@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import Item from './Item'; // Правильный путь к компоненту
+import Item from './Item';
 import Filtres from './Filters';
-import itemsData from './items.json'; // Импортируем JSON файл
+import itemsData from './items.json'; 
 
 const Container = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ function ItemsComponent() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    // Устанавливаем данные из JSON файла в состояние
+
     setItems(itemsData);
   }, []);
 
