@@ -1,9 +1,9 @@
-import React from 'react' 
+import React from 'react'
 import styled from 'styled-components';
 import photo_m from "/products/product1/main.png";
 import photo_1 from "/products/product1/1.png";
 import photo_2 from "/products/product1/2.png";
-import stare from"/products/view/Stare.svg";
+import stare from "/products/view/Stare.svg";
 import stard from "/products/view/Stard.svg";
 
 
@@ -32,7 +32,7 @@ padding-left: 50px;
 const Line = styled.div`
   border-bottom: 1px solid #46A358;
   opacity: 0.5;
-  width: 550px;
+  width: 565px;
   padding-top: 10px;
 
 `;
@@ -110,6 +110,16 @@ line-height: 24px;
 `;
 const Size = styled.div`
 
+font-size: 14px;
+font-weight: 500;
+margin-top: 24px;
+& span{
+  font-weight: 400;
+  display:inline-block;
+  font-size: 16px;
+  letter-spacing: 15px;
+}
+
 `;
 const Buy = styled.div`
 
@@ -119,13 +129,13 @@ function View() {
   return (
     <Container>
       <Photos>
-          <Column>
-            <div><img  src={photo_1} alt="" /></div>
-            <div><img  src={photo_2} alt="" /></div>
-          </Column>
-          <Main_photo>
-            <img  src={photo_m} alt="" />
-          </Main_photo>
+        <Column>
+          <div><img src={photo_1} alt="" /></div>
+          <div><img src={photo_2} alt="" /></div>
+        </Column>
+        <Main_photo>
+          <img src={photo_m} alt="" />
+        </Main_photo>
       </Photos>
       <Details>
         <Price_container>
@@ -146,10 +156,13 @@ function View() {
         </Price_container>
         <Line></Line>
         <Description>
-        <h3>Short Description:</h3>
-        <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
+          <h3>Short Description:</h3>
+          <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
         </Description>
-
+        <Size>
+          <p>Size:</p>
+          <span>S M L XL</span>
+        </Size>
       </Details>
     </Container>
   )
