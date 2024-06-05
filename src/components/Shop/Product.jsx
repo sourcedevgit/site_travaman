@@ -2,74 +2,82 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Container = styled.div`
-
+padding-left: 120px;
+padding-right: 120px;
 `;
 
-const Product_c = styled.div`
-color:  #46A358;
-font-size:20px;
-padding-left:140px;
-`;
 
 const Reviews = styled.div`
-display: flex;
-font-size: 20px;
-padding-left: 170px;
-& p {
-    padding-right: 20px;
+font-size: 17px;
+font-weight: 400;
+
+& span {
+    color:#46A358;
+    font-weight: 700;
+    margin-right: 78px;
+    margin-left: 10px;
 }
 
 `;
-
 const Line = styled.div`
-border-bottom: 4px solid #46A358;
-width: 180px;
-padding-right: 80px;
+  border-bottom: 3px solid #46A358;
+  width: 150px;
+  margin-top: 6px;
+  margin-bottom: 18px;
 `;
 
 const Container_t = styled.div`
-
+font-size: 14px;
+font-weight: 400;
 `;
 
 const Text1 = styled.div`
 & p {
+    margin-bottom: 35px;
+    color: #727272;
 
 }
 `;
 
 const Text2 = styled.div`
 & p {
-    
+    margin-bottom: 20px;
+    color: #727272;
 }
 `;
 
 const Text3 = styled.div`
 & p {
-    
+    font-weight: 800;
+    margin-bottom: 10px;
 }
 `;
 
 const Text4 = styled.div`
 & p {
-    
+    margin-bottom: 20px;
+    color: #727272;
 }
 `;
 
 const Text5 = styled.div`
 & p {
-    
+    font-weight: 800;
+    margin-bottom: 10px;
 }
 `;
 
 const Text6 = styled.div`
 & p {
-    
+    margin-bottom: 20px;
+    color: #727272;
 }
 `;
 
 const Text7 = styled.div`
 & p {
-    
+    font-weight: 800;
+    margin-bottom: 10px;
 }
 `;
 
@@ -83,11 +91,9 @@ const Text8 = styled.div`
 function Product() {
     return (
         <Container>
-            <Product_c>
-            </Product_c>
             <Reviews>
-                <p>Description</p>
-                <p>Reviews (19)</p>
+                <span>Description</span>
+                Reviews (19)
             </Reviews>
             <Line>
             </Line>
