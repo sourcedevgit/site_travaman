@@ -1,38 +1,39 @@
-import React from 'react'
-import Item from './Item'
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import Item from './Item'; // Правильный путь к компоненту
 import Filtres from './Filters';
+import itemsData from './items.json'; // Импортируем JSON файл
 
 const Container = styled.div`
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 `;
 
 const GridContainer = styled.div`
-display: grid;
-justify-content: center;
-padding-left: 100px;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-columns: 300px 300px 300px;
+  display: grid;
+  justify-content: center;
+  padding-left: 100px;
+  grid-template-columns: repeat(3, 300px);
 `;
 
-function Items_component() {
+function ItemsComponent() {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    // Устанавливаем данные из JSON файла в состояние
+    setItems(itemsData);
+  }, []);
+
   return (
     <Container>
-      <Filtres/>
+      <Filtres />
       <GridContainer>
-        <Item/> 
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
+        {items.map(item => (
+          <Item key={item.id} name={item.name} price={item.price} image={item.image} />
+        ))}
       </GridContainer>
     </Container>
-  )
+  );
 }
 
-export default Items_component
+export default ItemsComponent;
