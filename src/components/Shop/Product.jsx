@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Container = styled.div`
-
+display: flex;
+justify-content: center;
 `;
 
 
@@ -87,10 +88,14 @@ const Text8 = styled.div`
 }
 `;
 
+const Offset_container = styled.div`
+
+`;
 
 function Product() {
     return (
         <Container>
+            <Offset_container>
             <Reviews>
                 <span>Description</span>
                 Reviews (19)
@@ -107,6 +112,7 @@ function Product() {
                 <Text7><p>Office:</p></Text7>
                 <Text8><p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></Text8>
             </Container_t>
+            </Offset_container>
         </Container>
     )
 }

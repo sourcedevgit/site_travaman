@@ -11,8 +11,10 @@ import stard from "/products/view/Stard.svg";
 
 const Container = styled.div`
 display: flex;
-padding-left: 150px;
 padding-top: 70px;
+justify-content: center;
+
+padding-bottom: 90px;
 `;
 
 
@@ -135,10 +137,13 @@ color: #EAEAEA;
 border-color: #EAEAEA;
 border-style: solid;
 `;
-
+const Offset_container = styled.div`
+display: flex;
+`;
 function View() {
   return (
     <Container>
+      <Offset_container>
       <Photos>
         <Column>
           <div><img src={photo_1} alt="" /></div>
@@ -182,6 +187,7 @@ function View() {
           </span>
         </Size>
       </Details>
+      </Offset_container>
     </Container>
   )
 }
