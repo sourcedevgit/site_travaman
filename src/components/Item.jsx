@@ -19,6 +19,7 @@ const Card1 = styled.div`
   letter-spacing: 10%;
   text-transform: uppercase;
   justify-content: center;
+  align-items: center;
   font-size: 16px;
   & p {
     margin-left: 20px;
