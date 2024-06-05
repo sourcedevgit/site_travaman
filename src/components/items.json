@@ -7,50 +7,50 @@
     },
     {
       "id": 2,
-      "name": "Cactus Plant",
-      "price": "$199.00",
+      "name": "Angel Wing Begonia",
+      "price": "$169.00",
       "image": "/products/cards/2.png"
     },
     {
       "id": 3,
-      "name": "Cactus Plant",
+      "name": "African Violet",
       "price": "$199.00",
       "image": "/products/cards/3.png"
     },
     {
       "id": 4,
-      "name": "Cactus Plant",
-      "price": "$199.00",
+      "name": "Beach Spider Lily",
+      "price": "$129.00",
       "image": "/products/cards/4.png"
     },
     {
       "id": 5,
-      "name": "Cactus Plant",
-      "price": "$199.00",
+      "name": "Blushing Bromeliad",
+      "price": "$139.00",
       "image": "/products/cards/5.png"
     },
     {
       "id": 6,
-      "name": "Cactus Plant",
-      "price": "$199.00",
+      "name": "Aluminum Plant",
+      "price": "$179.00",
       "image": "/products/cards/6.png"
     },
     {
       "id": 7,
-      "name": "Cactus Plant",
-      "price": "$199.00",
+      "name": "Bird's Nest Fern",
+      "price": "$99.00",
       "image": "/products/cards/7.png"
     },
     {
       "id": 8,
-      "name": "Cactus Plant",
-      "price": "$199.00",
+      "name": "Broadleaf Lady Palm",
+      "price": "$59.00",
       "image": "/products/cards/8.png"
     },
     {
       "id": 9,
-      "name": "Cactus Plant",
-      "price": "$199.00",
+      "name": "Chinese Evergreen",
+      "price": "$39.00",
       "image": "/products/cards/8.png"
     }
   ]
