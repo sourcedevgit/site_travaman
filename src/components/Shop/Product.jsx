@@ -14,14 +14,13 @@ font-weight: 400;
 & span {
     color:#46A358;
     font-weight: 700;
-    margin-right: 78px;
-    margin-left: 10px;
+    margin-right: 30px;
 }
 
 `;
 const Line = styled.div`
   border-bottom: 3px solid #46A358;
-  width: 150px;
+  width: 160px;
   margin-top: 6px;
   margin-bottom: 18px;
 `;
@@ -29,7 +28,7 @@ const Line = styled.div`
 const Container_t = styled.div`
 font-size: 14px;
 font-weight: 400;
- width: 1200px;
+ width: 1300px;
 `;
 
 const Text1 = styled.div`
@@ -84,7 +83,7 @@ const Text7 = styled.div`
 
 const Text8 = styled.div`
 & p {
-    
+    color: #727272;
 }
 `;
 
@@ -97,7 +96,7 @@ function Product() {
         <Container>
             <Offset_container>
             <Reviews>
-                <span>Description</span>
+                <span>Product Description</span>
                 Reviews (19)
             </Reviews>
             <Line>

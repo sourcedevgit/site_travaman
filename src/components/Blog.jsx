@@ -16,7 +16,7 @@ position:static;
 
 margin-top: 100px;
 margin-right: 44px;
-margin-bottom: 100px;
+margin-bottom: -60px;
 
 width: 268px;
 height: 362px;

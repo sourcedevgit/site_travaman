@@ -19,17 +19,7 @@ padding-bottom: 90px;
 
 
 const Details = styled.div`
-font-family: "M";
-font-size: 28px;
-font-weight: 700;
-padding-left: 50px;
-& span{
-
-  display: flex;
-  color: #46A358;
-  font-size: 22px;
-  margin-top: 20px;
-}`;
+`;
 
 const Line = styled.div`
   border-bottom: 1px solid #46A358;
@@ -89,6 +79,15 @@ font-size: 15px;
 const Container_1 = styled.div`
 width: 240px;
 height: 60px;
+font-size: 28px;
+font-weight: 700;
+& span{
+
+  display: flex;
+  color: #46A358;
+  font-size: 22px;
+  margin-top: 20px;
+}
 `;
 const Price_container = styled.div`
 display: flex;
@@ -112,13 +111,11 @@ line-height: 24px;
 `;
 const Size = styled.div`
 
-font-size: 14px;
-font-weight: 500;
-margin-top: 24px;
-& span{
-  font-weight: 400;
+font-size: 16px;
+font-weight: 600;
+margin-top: 25px;
+& span{ 
   display:inline-block;
-  font-size: 16px;
   letter-spacing: 15px;
 }
 
@@ -128,14 +125,45 @@ const Buy = styled.div`
 `;
 
 const Button_t = styled.button`
-height: 28px;
-width: 28px;
+font-weight: 400;
+font-size: 16px;
+height: 30px;
+width: 30px;
 border-radius: 20px;
-margin-right: 5px;
-background-color: white;
-color: #EAEAEA;
+margin-right: 10px;
+color: #727272;
+background-color: #EAEAEA;
 border-color: #EAEAEA;
 border-style: solid;
+margin-top:10px;
+`;
+
+const Piece = styled.div`
+font-size: 16px;
+font-weight: 600;
+margin-top: 26px;
+& span{ 
+  display:flex;
+}
+
+&p{
+  font-size:20px;
+  font-weight:400;
+}
+`;
+
+const Button_t1 = styled.button`
+font-weight: 500;
+font-size: 25px;
+height: 34px;
+width: 34px;
+border-radius: 20px;
+margin-right: 73px;
+color: white;
+background-color: #46A358;
+border-color: #46A358;
+border-style: solid;
+margin-top: 10px;
 `;
 const Offset_container = styled.div`
 display: flex;
@@ -178,14 +206,19 @@ function View() {
         <Size>
           <p>Size:</p>
           <span>
-
             <Button_t>S</Button_t>
             <Button_t>M</Button_t>
             <Button_t>L</Button_t>
             <Button_t>XL</Button_t>
-            
           </span>
         </Size>
+        <Piece>
+          <span>
+            <Button_t1>+</Button_t1>
+            <p>1</p>
+            <Button_t1>-</Button_t1>
+          </span>
+        </Piece>
       </Details>
       </Offset_container>
     </Container>
