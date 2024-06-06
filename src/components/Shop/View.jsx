@@ -13,10 +13,8 @@ const Container = styled.div`
 display: flex;
 padding-top: 70px;
 justify-content: center;
-
 padding-bottom: 90px;
 `;
-
 
 const Details = styled.div`
 `;
@@ -35,9 +33,11 @@ width: 100px;
 & img{
   padding-bottom: 40px;
 }`;
+
 const Photos = styled.div`
 display: flex;
 `;
+
 const Main_photo = styled.div`
   background-color: #FBFBFB;
   height: 444px;
@@ -53,6 +53,7 @@ const Name = styled.div`
 const Price = styled.div`
 
 `;
+
 const Review = styled.div`
 display: flex;
 & p{
@@ -165,9 +166,13 @@ border-color: #46A358;
 border-style: solid;
 margin-top: 10px;
 `;
+
+
+
 const Offset_container = styled.div`
 display: flex;
 `;
+
 function View() {
   return (
     <Container>
@@ -214,9 +219,9 @@ function View() {
         </Size>
         <Piece>
           <span>
-            <Button_t1>+</Button_t1>
-            <p>1</p>
             <Button_t1>-</Button_t1>
+            <p>1</p>
+            <Button_t1>+</Button_t1>
           </span>
         </Piece>
       </Details>
