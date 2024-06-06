@@ -35,6 +35,7 @@ width: 100px;
 }`;
 
 const Photos = styled.div`
+
 display: flex;
 `;
 
@@ -91,6 +92,7 @@ font-weight: 700;
 }
 `;
 const Price_container = styled.div`
+
 display: flex;
 `;
 const Description = styled.div`
@@ -140,17 +142,24 @@ margin-top:10px;
 `;
 
 const Piece = styled.div`
+display: flex;
 font-size: 16px;
 font-weight: 600;
 margin-top: 26px;
 & span{ 
   display:flex;
+  margin-left:25px;
+  margin-left: 10px;
 }
 
-&p{
-  font-size:20px;
+
+`;
+const Valuee = styled.p`
+
+font-size:20px;
   font-weight:400;
-}
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 const Button_t1 = styled.button`
@@ -159,7 +168,7 @@ font-size: 25px;
 height: 34px;
 width: 34px;
 border-radius: 20px;
-margin-right: 73px;
+margin-right:50px;
 color: white;
 background-color: #46A358;
 border-color: #46A358;
@@ -172,43 +181,42 @@ margin-top: 10px;
 `;
 
 const Offset_container = styled.div`
+
 display: flex;
 `;
 
 const Button_t2 = styled.button`
-font-weight: 500;
-font-size: 25px;
+margin-left: 30px;
+font-weight: 700;
 height: 34px;
-width: 170px;
-border-radius: 12px;
-margin-right: 120px;
+width: 140px;
+border-radius: 9px;
 color: white;
 background-color: #46A358;
 border-color: #46A358;
 border-style: solid;
 margin-top: 10px;
+
 & hover{
   border-color: #378045;
 }
-
 `;
 
 const Button_t3 = styled.button`
-font-weight: 500;
-font-size: 25px;
+margin-left: 10px;
+font-weight: 700;
 height: 34px;
-width: 34px;
-border-radius: 20px;
-margin-right: 73px;
-color: white;
-background-color: #46A358;
+width: 160px;
+border-radius: 9px;
+color: #46A358;
+background-color: white;
 border-color: #46A358;
 border-style: solid;
 margin-top: 10px;
+
 & hover{
   border-color: #378045;
 }
-
 `;
 
 
@@ -216,60 +224,60 @@ function View() {
   return (
     <Container>
       <Offset_container>
-      <Photos>
-        <Column>
-          <div><img src={photo_1} alt="" /></div>
-          <div><img src={photo_2} alt="" /></div>
-        </Column>
-        <Main_photo>
-          <img src={photo_m} alt="" />
-        </Main_photo>
-      </Photos>
-      <Details>
-        <Price_container>
-          <Container_1>
-            <Name>Barberton Daisy</Name>
-            <span><p>$</p><Price>119.00</Price></span>
-          </Container_1>
-          <Review>
-            <Stars>
-              <img src={stare} alt="" />
-              <img src={stare} alt="" />
-              <img src={stare} alt="" />
-              <img src={stare} alt="" />
-              <img src={stard} alt="" />
-              <p>19 Customer Review</p>
-            </Stars>
-          </Review>
-        </Price_container>
-        <Line></Line>
-        <Description>
-          <h3>Short Description:</h3>
-          <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
-        </Description>
-        <Size>
-          <p>Size:</p>
-          <span>
-            <Button_t>S</Button_t>
-            <Button_t>M</Button_t>
-            <Button_t>L</Button_t>
-            <Button_t>XL</Button_t>
-          </span>
-        </Size>
-        <Piece>
-          <span>
-            <Button_t1>-</Button_t1>
-            <p>1</p>
-            <Button_t1>+</Button_t1>
-          </span>
-          <span>
-          <Button_t2>Buy NOW</Button_t2>
-          </span>
-          <span>
-          <Button_t3>Add to cart</Button_t3>
-          </span>
-        </Piece>
-      </Details>
+        <Photos>
+          <Column>
+            <div><img src={photo_1} alt="" /></div>
+            <div><img src={photo_2} alt="" /></div>
+          </Column>
+          <Main_photo>
+            <img src={photo_m} alt="" />
+          </Main_photo>
+        </Photos>
+        <Details>
+          <Price_container>
+            <Container_1>
+              <Name>Barberton Daisy</Name>
+              <span><p>$</p><Price>119.00</Price></span>
+            </Container_1>
+            <Review>
+              <Stars>
+                <img src={stare} alt="" />
+                <img src={stare} alt="" />
+                <img src={stare} alt="" />
+                <img src={stare} alt="" />
+                <img src={stard} alt="" />
+                <p>19 Customer Review</p>
+              </Stars>
+            </Review>
+          </Price_container>
+          <Line></Line>
+          <Description>
+            <h3>Short Description:</h3>
+            <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
+          </Description>
+          <Size>
+            <p>Size:</p>
+            <span>
+              <Button_t>S</Button_t>
+              <Button_t>M</Button_t>
+              <Button_t>L</Button_t>
+              <Button_t>XL</Button_t>
+            </span>
+          </Size>
+          <Piece>
+            <span>
+              <Button_t1>-</Button_t1>
+              <Valuee>1</Valuee>
+              <Button_t1>+</Button_t1>
+            </span>
+            <span>
+              <Button_t2>BUY NOW</Button_t2>
+            </span>
+            <span>
+              <Button_t3>ADD TO CART</Button_t3>
+            </span>
+          </Piece>
+        </Details>
       </Offset_container>
     </Container>
   )
