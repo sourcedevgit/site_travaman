@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
+import RangeSliderInput from 'react-range-slider-input';
+import 'react-range-slider-input/dist/style.css';
 import styled from 'styled-components';
 
 import sale from "/SaleBanner.png"; 
+
 const Container = styled.div`
 display: flex;
 
@@ -29,7 +32,7 @@ padding-left:30px;
 
 const All_container = styled.div`
 
-`;
+  `;
 
 const Filter_header = styled.div`
 font-weight: 700;
@@ -93,7 +96,14 @@ const ShopButton = styled.button`
     
 `;
 
+
+
 function Filtres() {
+    const [values, setValues] = useState([0, 100]); 
+  
+    const handleChange = (newValues) => {
+      setValues(newValues);
+    };
     return (
         <Container>
             <All_container>
@@ -128,8 +138,20 @@ function Filtres() {
                     <p>Price Range</p>
                 </Wrapper_header>
                 <Wrapper>
-                    <p>Price:</p> <span>$39 - $1230</span>
+                    <p>Price:</p> <span>${values[0]} - ${values[1]}</span>
+
                 </Wrapper>
+                
+
+                <RangeSliderInput
+                    value={values}
+                    onInput={handleChange}
+                    min={0}
+                    max={2000
+                    }
+                    step={1}
+                />
+
                 <ShopButton>Filter</ShopButton>
                 <Filter_header2>
                     <p>Size</p>
