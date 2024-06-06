@@ -146,20 +146,17 @@ display: flex;
 font-size: 16px;
 font-weight: 600;
 margin-top: 26px;
-& span{ 
+& span{
   display:flex;
-  margin-left:25px;
-  margin-left: 10px;
 }
-
-
 `;
-const Valuee = styled.p`
 
+const Valuee = styled.p`
+margin-top:15px;
 font-size:20px;
-  font-weight:400;
-  padding-left: 10px;
-  padding-right: 10px;
+font-weight:400;
+padding-left: 30px;
+padding-right: 30px;
 `;
 
 const Button_t1 = styled.button`
@@ -168,7 +165,7 @@ font-size: 25px;
 height: 34px;
 width: 34px;
 border-radius: 20px;
-margin-right:50px;
+margin-right:;
 color: white;
 background-color: #46A358;
 border-color: #46A358;
@@ -186,7 +183,7 @@ display: flex;
 `;
 
 const Button_t2 = styled.button`
-margin-left: 30px;
+margin-left: 100px;
 font-weight: 700;
 height: 34px;
 width: 140px;
