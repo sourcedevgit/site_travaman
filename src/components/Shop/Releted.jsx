@@ -135,6 +135,7 @@ color: #46A358;
 font-weight: 700;
 font-size: 17px;
 margin-bottom: 55px;
+margin-left: 65px;
 `;
 
 const Card_container = styled.div`
