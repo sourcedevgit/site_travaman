@@ -19,7 +19,6 @@ export const Home = () => {
         <Items_component/>
         <Basement/>
         <Blog/>
-
         <End/>
         
 
