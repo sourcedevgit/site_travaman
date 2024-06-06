@@ -15,6 +15,8 @@ border-radius: 25px;
 margin-top: 47px;
 .range-slider {
   background: #46a3592b;
+  width: 250px;
+  
 }
 
 
@@ -59,7 +61,12 @@ font-weight: 700;
 padding-left:18px;
 padding-top:14px;
 `;
-
+const Sl = styled.div`
+display: flex;
+justify-content: center;
+padding-top: 30PX;
+padding-bottom: 10px;
+`;
 const Wrapper = styled.div`
 
 display: flex;
@@ -96,7 +103,7 @@ padding-top: 7px;
 `;
 
 const ShopButton = styled.button`
-    margin-top: 25px;
+
     margin-left: 29px;
     color: white;
     height: 35px;
@@ -113,7 +120,7 @@ const ShopButton = styled.button`
 
 
 function Filtres() {
-    const [values, setValues] = useState([0, 100]); 
+    const [values, setValues] = useState([0, 1000]);
   
     const handleChange = (newValues) => {
       setValues(newValues);
@@ -151,20 +158,22 @@ function Filtres() {
                 <Wrapper_header>
                     <p>Price Range</p>
                 </Wrapper_header>
+                <Sl>
+                  <RangeSliderInput
+                    value={values}
+                    onInput={handleChange}
+                    min={0}
+                    max={2000}
+                    step={1}
+                />  
+                </Sl>
                 <Wrapper>
                     <p>Price:</p> <span>${values[0]} - ${values[1]}</span>
 
                 </Wrapper>
                 
 
-                <RangeSliderInput
-                    value={values}
-                    onInput={handleChange}
-                    min={0}
-                    max={2000
-                    }
-                    step={1}
-                />
+                
 
                 <ShopButton>Filter</ShopButton>
                 <Filter_header2>
