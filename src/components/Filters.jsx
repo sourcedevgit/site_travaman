@@ -14,9 +14,7 @@ background-color: #F5F5F5;
 border-radius: 25px;
 margin-top: 47px;
 .range-slider {
-
   background: #46a3592b;
-
 }
 
 
