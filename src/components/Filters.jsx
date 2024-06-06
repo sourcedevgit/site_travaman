@@ -22,6 +22,8 @@ margin-top: 47px;
 
 .range-slider .range-slider__thumb {
   background: #46A358;
+  width: 17px;
+  height: 17px;
 }
 
 
@@ -84,7 +86,7 @@ padding-left:30px;
 const Filter_header2 = styled.div`
 font-weight: 700;
 padding-left: 18px;
-padding-top: 100px;
+padding-top: 50px;
 `;
 
 const Filter2 = styled.div`

@@ -12,7 +12,7 @@ justify-content: center;
 
 const InnerContainer = styled.div`
 display: flex;
-
+margin-left: -100px;
 margin-top: 300px;
 
 width: 586px;

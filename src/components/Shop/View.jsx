@@ -175,6 +175,43 @@ const Offset_container = styled.div`
 display: flex;
 `;
 
+const Button_t2 = styled.button`
+font-weight: 500;
+font-size: 25px;
+height: 34px;
+width: 170px;
+border-radius: 12px;
+margin-right: 120px;
+color: white;
+background-color: #46A358;
+border-color: #46A358;
+border-style: solid;
+margin-top: 10px;
+& hover{
+  border-color: #378045;
+}
+
+`;
+
+const Button_t3 = styled.button`
+font-weight: 500;
+font-size: 25px;
+height: 34px;
+width: 34px;
+border-radius: 20px;
+margin-right: 73px;
+color: white;
+background-color: #46A358;
+border-color: #46A358;
+border-style: solid;
+margin-top: 10px;
+& hover{
+  border-color: #378045;
+}
+
+`;
+
+
 function View() {
   return (
     <Container>
@@ -224,6 +261,12 @@ function View() {
             <Button_t1>-</Button_t1>
             <p>1</p>
             <Button_t1>+</Button_t1>
+          </span>
+          <span>
+          <Button_t2>Buy NOW</Button_t2>
+          </span>
+          <span>
+          <Button_t3>Add to cart</Button_t3>
           </span>
         </Piece>
       </Details>
