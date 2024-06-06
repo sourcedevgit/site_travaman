@@ -165,9 +165,11 @@ background-color: #46A358;
 border-color: #46A358;
 border-style: solid;
 margin-top: 10px;
+& hover{
+  border-color: #378045;
+}
+
 `;
-
-
 
 const Offset_container = styled.div`
 display: flex;
