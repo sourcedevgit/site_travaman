@@ -8,12 +8,11 @@ import tree4 from "/tree4.png"
 import tree5 from "/tree5.png"
 
 const Container = styled.div`
-  width: 258px;
-  height: 320px;
   background-color: #FBFBFB;
   border-radius: 25px;
   margin-top: 50px;
-  padding-left: 750px;
+  display: flex;
+justify-content: center;
 `;
 
 const Card1 = styled.div`
@@ -132,7 +131,6 @@ const Container_t = styled.div`
 `;
 
 const Text1 = styled.div`
-margin-left:-450px;
 color: #46A358;
 font-weight: 700;
 font-size: 17px;
@@ -144,9 +142,13 @@ display:flex;
 justify-content: center;
 `;
 
+const Container_all = styled.div`
+
+`;
 function Releted() {
     return (
         <Container>
+        <Container_all>
             <Container_t>
                 <Text1>Releted Products</Text1>
             </Container_t>
@@ -172,6 +174,7 @@ function Releted() {
                     <p>Chinese Evergreen</p><span>$39.00</span>
                 </Card5>
             </Card_container>
+            </Container_all>
         </Container>
     )
 }
