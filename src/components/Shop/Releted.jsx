@@ -8,7 +8,6 @@ import tree4 from "/tree4.png"
 import tree5 from "/tree5.png"
 
 const Container = styled.div`
-  background-color: #FBFBFB;
   border-radius: 25px;
   margin-top: 50px;
   display: flex;
@@ -41,7 +40,7 @@ const Card2 = styled.div`
   letter-spacing: 10%;
   font-size: 16px;
   margin-left:50px;
-  margin-top: 30px;
+  margin-top: 25px;
   & p {
     margin-left: 10px;
     margin-top: 19px;
