@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import photo_m from "/products/product1/main.png";
+Line
 import photo_1 from "/products/product1/1.png";
 import photo_2 from "/products/product1/2.png";
 import stare from "/products/view/Stare.svg";
