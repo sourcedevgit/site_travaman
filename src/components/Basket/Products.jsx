@@ -4,16 +4,24 @@ import styled from 'styled-components';
 import bas1 from "/bas1.png";
 
 const Container = styled.div`
-display:flex;
+
 padding-left: 100px;
 padding-top: 70px;
 `;
 
 const Header = styled.div`
-display: flex;
+display: grid;
+grid-template-columns: 500px 1fr ;
+& div{
+   
+}
  & span{
-    display: flex;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
  }
+& p{
+
+}
 `;
 
 const Card1 = styled.div`
@@ -47,7 +55,9 @@ const Total = styled.div`
 `;
 
 const Quantity = styled.div`
-
+& span{
+    display: flex;
+}
 `;
 
 const Valuee = styled.p`
@@ -63,7 +73,7 @@ function Products() {
     return (
         <Container>
             <Header>
-                Products <span><p>Price</p> <p>Quantity</p> <p>Total</p></span>
+                <div>Products</div> <span><p>Price</p> <p>Quantity</p> <p>Total</p></span>
             </Header>
             <Container_Product>
                 <Card1>
