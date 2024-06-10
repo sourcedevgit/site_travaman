@@ -107,7 +107,7 @@ export const Navbar = () => {
         <ButtonContainer>
           <TextLink href="/">Home</TextLink>
           <TextLink href="/shop">Shop</TextLink>
-          <TextLink href="/basket">Plant Care</TextLink>
+          <TextLink href="/">Plant Care</TextLink>
           <TextLink href="/">Blogs</TextLink>
         </ButtonContainer>  
         <SbContainer>
