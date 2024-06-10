@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import photo_m from "/products/product1/main.png";
 import photo_1 from "/products/product1/1.png";
@@ -148,18 +148,16 @@ font-weight: 600;
 margin-top: 26px;
 & span{
   display:flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 `;
 
-const Valuee = styled.p`
-margin-top:15px;
-font-size:20px;
-font-weight:400;
-padding-left: 30px;
-padding-right: 30px;
-`;
+
 
 const Button_t1 = styled.button`
+
 font-weight: 500;
 font-size: 25px;
 height: 34px;
@@ -170,10 +168,15 @@ background-color: #46A358;
 border-color: #46A358;
 border-style: solid;
 margin-top: 10px;
-& hover{
-  border-color: #378045;
-}
 
+& span {
+  display: flex;
+  font-size: 2rem;
+  width: 50px;
+  text-align: center;
+  
+  align-items: center;
+}
 `;
 
 const Offset_container = styled.div`
@@ -195,7 +198,7 @@ margin-top: 10px;
 text-decoration: none;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: center;  
 & hover{
   border-color: #378045;
 }
@@ -260,6 +263,15 @@ color: #A5A5A5;
 `;
 
 function View() {
+  const [value, setValue] = useState(1);
+
+  const increment = () => {
+    setValue(value + 1);
+  };
+
+  const decrement = () => {
+    setValue(value > 1 ? value - 1 : 1);
+  };
   return (
     <Container>
       <Offset_container>
@@ -305,9 +317,9 @@ function View() {
           </Size>
           <Piece>
             <span>
-              <Button_t1>-</Button_t1>
-              <Valuee>1</Valuee>
-              <Button_t1>+</Button_t1>
+              <Button_t1 onClick={decrement}>-</Button_t1>
+              <span>{value}</span>
+              <Button_t1 onClick={increment}>+</Button_t1>
             </span>
             <span>
               <Button_t2 as={Link} to="basket">BUY NOW</Button_t2>

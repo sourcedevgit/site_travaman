@@ -10,9 +10,9 @@ padding-top: 70px;
 `;
 
 const Header = styled.div`
-
+display: flex;
  & span{
-
+    display: flex;
  }
 `;
 
@@ -63,7 +63,7 @@ function Products() {
     return (
         <Container>
             <Header>
-                Products <span>Price Quantity Total</span>
+                Products <span><p>Price</p> <p>Quantity</p> <p>Total</p></span>
             </Header>
             <Container_Product>
                 <Card1>

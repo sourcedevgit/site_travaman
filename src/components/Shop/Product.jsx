@@ -96,8 +96,7 @@ function Product() {
         <Container>
             <Offset_container>
             <Reviews>
-                <span>Product Description</span>
-                Reviews (19)
+                <span>Product Description</span>Reviews (19)
             </Reviews>
             <Line>
             </Line>
