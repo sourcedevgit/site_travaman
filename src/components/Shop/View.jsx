@@ -5,6 +5,7 @@ import photo_1 from "/products/product1/1.png";
 import photo_2 from "/products/product1/2.png";
 import stare from "/products/view/Stare.svg";
 import stard from "/products/view/Stard.svg";
+import Heart from "/products/view/heart.svg";
 import { Link } from 'react-router-dom'
 
 
@@ -149,6 +150,7 @@ margin-top: 26px;
 & span{
   display:flex;
   align-items: center;
+  justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -167,7 +169,7 @@ color: white;
 background-color: #46A358;
 border-color: #46A358;
 border-style: solid;
-margin-top: 10px;
+
 
 & span {
   display: flex;
@@ -194,7 +196,6 @@ color: white;
 background-color: #46A358;
 border-color: #46A358;
 border-style: solid;
-margin-top: 10px;
 text-decoration: none;
 display: flex;
 justify-content: center;
@@ -215,21 +216,22 @@ color: #46A358;
 background-color: white;
 border-color: #46A358;
 border-style: solid;
-margin-top: 10px;
 `;
 
 const Button_t4 = styled.button`
 font-size: 25px;
 margin-left: 10px;
 font-weight: 400;
-height: 34px;
-width: 34px;
+height: 40px;
+width: 40px;
 border-radius: 6px;
 color: #46A358;
 background-color: white;
 border-color: #46A358;
 border-style: solid;
-margin-top: 9px;
+display: flex;
+justify-content: center;
+align-items: center;
 `;
 
 const Container_end = styled.div`
@@ -261,6 +263,12 @@ color: #A5A5A5;
   color: #727272;
 }
 `;
+
+const Buy_now = styled.div`
+float: right;
+`;
+
+
 
 function View() {
   const [value, setValue] = useState(1);
@@ -315,20 +323,21 @@ function View() {
               <Button_t>XL</Button_t>
             </span>
           </Size>
+          
           <Piece>
             <span>
               <Button_t1 onClick={decrement}>-</Button_t1>
               <span>{value}</span>
               <Button_t1 onClick={increment}>+</Button_t1>
             </span>
-            <span>
+            <Buy_now>
               <Button_t2 as={Link} to="basket">BUY NOW</Button_t2>
-            </span>
+            </Buy_now>
             <span>
               <Button_t3>ADD TO CART</Button_t3>
             </span>
             <span>
-              <Button_t4>♡</Button_t4>
+              <Button_t4><img src={Heart} alt="" /></Button_t4>
             </span>
           </Piece>
           <Container_end>
