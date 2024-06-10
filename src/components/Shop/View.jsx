@@ -209,7 +209,7 @@ align-items: center;
 const Button_t3 = styled.button`
 margin-left: 10px;
 font-weight: 700;
-height: 34px;
+height: 41px;
 width: 160px;
 border-radius: 9px;
 color: #46A358;

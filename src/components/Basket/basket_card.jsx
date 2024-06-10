@@ -28,9 +28,16 @@ color: #3D3D3D;
 & span{
     color: #727272;
 }
+
+& p{
+    color: #3D3D3D;
+    font-weight: 600;
+    font-size: 16px;
+}
 `;
 
 const Price = styled.div`
+color: #727272;
 margin-left: 100px;
 `;
 
