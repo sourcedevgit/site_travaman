@@ -5,7 +5,7 @@ import photo_1 from "/products/product1/1.png";
 import photo_2 from "/products/product1/2.png";
 import stare from "/products/view/Stare.svg";
 import stard from "/products/view/Stard.svg";
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -192,10 +192,14 @@ background-color: #46A358;
 border-color: #46A358;
 border-style: solid;
 margin-top: 10px;
-
+text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center;
 & hover{
   border-color: #378045;
 }
+
 `;
 
 const Button_t3 = styled.button`
@@ -306,7 +310,7 @@ function View() {
               <Button_t1>+</Button_t1>
             </span>
             <span>
-              <Button_t2>BUY NOW</Button_t2>
+              <Button_t2 as={Link} to="basket">BUY NOW</Button_t2>
             </span>
             <span>
               <Button_t3>ADD TO CART</Button_t3>
