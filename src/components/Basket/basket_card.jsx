@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import bas1 from "/bas1.png";
@@ -88,6 +88,15 @@ border-style: solid;
 
 
 function basket_card() {
+    const [value, setValue] = useState(1);
+
+    const increment = () => {
+      setValue(value + 1);
+    };
+  
+    const decrement = () => {
+      setValue(value > 1 ? value - 1 : 1);
+    };
   return (
     
     <Card>
@@ -101,9 +110,9 @@ function basket_card() {
         </Price>
         <Quantity>
             <span>
-                <Button_t1>-</Button_t1>
-                <Value>1</Value>
-                <Button_t1>+</Button_t1>
+                <Button_t1 onClick={decrement}>-</Button_t1>
+              <Value>{value}</Value>
+              <Button_t1 onClick={increment}>+</Button_t1>
             </span>
         </Quantity>
         <Total>
