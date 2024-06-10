@@ -40,13 +40,13 @@ display: flex;
 `;
 
 const Main_photo = styled.div`
-  background-color: #FBFBFB;
   height: 444px;
   width: 444px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  margin-right: 153px;
 `;
 const Name = styled.div`
 
@@ -134,8 +134,8 @@ height: 30px;
 width: 30px;
 border-radius: 20px;
 margin-right: 10px;
-color: #727272;
-background-color: #EAEAEA;
+color: #444444;
+background-color: #ffffff;
 border-color: #EAEAEA;
 border-style: solid;
 margin-top:10px;
@@ -165,7 +165,6 @@ font-size: 25px;
 height: 34px;
 width: 34px;
 border-radius: 20px;
-margin-right:;
 color: white;
 background-color: #46A358;
 border-color: #46A358;
@@ -183,7 +182,7 @@ display: flex;
 `;
 
 const Button_t2 = styled.button`
-margin-left: 100px;
+margin-left: 25px;
 font-weight: 700;
 height: 34px;
 width: 140px;
@@ -210,12 +209,51 @@ background-color: white;
 border-color: #46A358;
 border-style: solid;
 margin-top: 10px;
+`;
 
-& hover{
-  border-color: #378045;
+const Button_t4 = styled.button`
+font-size: 25px;
+margin-left: 10px;
+font-weight: 400;
+height: 34px;
+width: 34px;
+border-radius: 6px;
+color: #46A358;
+background-color: white;
+border-color: #46A358;
+border-style: solid;
+margin-top: 9px;
+`;
+
+const Container_end = styled.div`
+word-break: break-all;
+font-size:15px;
+margin-top: 20px;
+`;
+
+const End1 = styled.div`
+color: #A5A5A5;
+
+& span{
+  color: #727272;
 }
 `;
 
+const End2 = styled.div`
+color: #A5A5A5;
+
+& span{
+  color: #727272;
+}
+`;
+
+const End3 = styled.div`
+color: #A5A5A5;
+
+& span{
+  color: #727272;
+}
+`;
 
 function View() {
   return (
@@ -273,7 +311,15 @@ function View() {
             <span>
               <Button_t3>ADD TO CART</Button_t3>
             </span>
+            <span>
+              <Button_t4>♡</Button_t4>
+            </span>
           </Piece>
+          <Container_end>
+            <End1>SKU: <span>1995751877966</span></End1>
+            <End2>Categories: <span> Potter Plants</span></End2>
+            <End3>Tags: <span>Home, Garden, Plants</span></End3>
+          </Container_end>
         </Details>
       </Offset_container>
     </Container>
