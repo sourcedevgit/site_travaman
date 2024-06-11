@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import Cart from './Cart'
 import Card from './basket_card';
 
 const Container = styled.div`
@@ -18,7 +18,7 @@ grid-template-columns: 500px 1fr ;
 }
  & span{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 200px 200px 10px;
  }
 & p{
 
@@ -43,6 +43,7 @@ function Products() {
                <Card></Card>
             </Container_Product>
         </Container_all>
+        <Cart></Cart>
         </Container>
     )
 }

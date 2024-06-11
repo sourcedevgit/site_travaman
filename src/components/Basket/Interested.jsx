@@ -11,7 +11,7 @@ import tree5 from "/tree5.png"
 
 const Container = styled.div`
   border-radius: 25px;
-  margin-top: 50px;
+
   display: flex;
   justify-content: center;
 `;

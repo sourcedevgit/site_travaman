@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const Container = styled.div`
 display: flex;
 justify-content: center;
-padding-left: 200px;
-padding-top: 140px;
+padding-left: 50px;
+
 `;
 
 const Card1 = styled.div`

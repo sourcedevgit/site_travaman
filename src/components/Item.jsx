@@ -25,7 +25,7 @@ const Card = styled.div`
   align-items: center;
   text-decoration: none;
   font-size: 16px;
-  color: #000; /* Цвет текста для всех состояний */
+  color: #000; 
   & p {
     margin-left: 20px;
   }
