@@ -67,6 +67,7 @@ align-items: center;
     border: 1px solid #286634;
   } 
 `;
+
 const Text = styled.div`
 font-size: 15px;
 margin-top: 8px;
