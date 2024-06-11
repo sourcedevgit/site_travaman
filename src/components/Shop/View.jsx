@@ -155,8 +155,8 @@ const ButtonT1 = styled.button`
   background-color: #46A358;
   border: 1px solid #46A358;
   &:hover {
-    background-color: #75b682;
-    border: 1px solid #75b682;
+    background-color: #286634;
+    border: 1px solid #286634;
   } 
   & span {
     display: flex;
@@ -186,8 +186,9 @@ const ButtonT2 = styled.button`
   align-items: center;
 
   &:hover {
-    background-color: #378045;
-  }
+    background-color: #286634;
+    border: 1px solid #286634;
+  } 
 `;
 
 const ButtonT3 = styled.button`
@@ -200,8 +201,9 @@ const ButtonT3 = styled.button`
   background-color: white;
   border: 1px solid #46A358;
   &:hover {
-    border-color: #9cbea3;
-  }    
+    background-color: #286634;
+    border: 1px solid #286634;
+  } 
 `;
 
 const ButtonT4 = styled.button`

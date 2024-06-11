@@ -70,8 +70,9 @@ const ShopButton = styled.button`
     font-size: 14;
     font-weight: 500;
     &:hover {
-    background-color: #378045;
-  }    
+    background-color: #286634;
+    border: 1px solid #286634;
+  }   
 `;
 const InnerContainer1 = styled.div`
 display: flex;

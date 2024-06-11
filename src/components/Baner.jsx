@@ -55,8 +55,9 @@ const Text_Container = styled.div`
 & button {
     background-color: #46A358;
     &:hover {
-    background-color: #378045;
-  }    
+    background-color: #286634;
+    border: 1px solid #286634;
+  } 
     }
 
 `;

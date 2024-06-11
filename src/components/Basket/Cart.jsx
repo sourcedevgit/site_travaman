@@ -62,7 +62,10 @@ text-decoration: none;
 display: flex;
 justify-content: center;
 align-items: center;
-
+&:hover {
+    background-color: #286634;
+    border: 1px solid #286634;
+  } 
 `;
 const Text = styled.div`
 font-size: 15px;

@@ -116,9 +116,10 @@ const ShopButton = styled.button`
     align-items: center;
     font-size: 16;
     font-weight: 700;
-&:hover {
-    background-color: #378045;
-  }    
+    &:hover {
+    background-color: #286634;
+    border: 1px solid #286634;
+  } 
     
 `;
 

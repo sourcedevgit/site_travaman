@@ -74,7 +74,10 @@ color: white;
 background-color: #46A358;
 border-color: #46A358;
 border-style: solid;
-
+&:hover {
+    background-color: #286634;
+    border: 1px solid #286634;
+  } 
 
 & span {
   display: flex;
