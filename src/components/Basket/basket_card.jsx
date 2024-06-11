@@ -7,7 +7,7 @@ const Card = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 justify-content: center;
-margin-top:100px;
+margin-top: 50px;
 align-items: center;
 width: 1000px;
 height: 80px;
