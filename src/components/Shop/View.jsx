@@ -1,46 +1,42 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 import photo_m from "/products/product1/main.png";
 import photo_1 from "/products/product1/1.png";
 import photo_2 from "/products/product1/2.png";
 import stare from "/products/view/Stare.svg";
 import stard from "/products/view/Stard.svg";
 import Heart from "/products/view/heart.svg";
-import { Link } from 'react-router-dom'
-
-
 
 const Container = styled.div`
-display: flex;
-padding-top: 70px;
-justify-content: center;
-padding-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  padding: 70px 0 90px;
 `;
 
-const Details = styled.div`
-`;
+const Details = styled.div``;
 
 const Line = styled.div`
   border-bottom: 1px solid #46A358;
   opacity: 0.5;
   width: 565px;
   padding-top: 10px;
-
 `;
 
 const Column = styled.div`
-display: inline;
-width: 100px; 
-& img{
-  padding-bottom: 40px;
-}`;
-
-const Photos = styled.div`
-
-display: flex;
+  display: inline;
+  width: 100px; 
+  & img {
+    padding-bottom: 40px;
+  }
 `;
 
-const Main_photo = styled.div`
+const Photos = styled.div`
+  display: flex;
+`;
+
+const MainPhoto = styled.div`
   height: 444px;
   width: 444px;
   display: flex;
@@ -49,226 +45,191 @@ const Main_photo = styled.div`
   border-radius: 20px;
   margin-right: 153px;
 `;
-const Name = styled.div`
 
-`;
-const Price = styled.div`
+const Name = styled.div``;
 
-`;
+const Price = styled.div``;
 
 const Review = styled.div`
-display: flex;
-& p{
-  
-  font-weight: 300;
-}
+  display: flex;
+  & p {
+    font-weight: 300;
+  }
 `;
 
 const Stars = styled.div`
-display: flex;
-margin-top: 62px;
-margin-left: 90px;
-align-items: center;
-& img{
-height: 15px;
-width: 15px;
-}
-& p{
-  padding-left: 5px;
-}
-font-size: 15px;
-`;
-
-const Container_1 = styled.div`
-width: 240px;
-height: 60px;
-font-size: 28px;
-font-weight: 700;
-& span{
-
   display: flex;
-  color: #46A358;
-  font-size: 22px;
-  margin-top: 20px;
-}
+  margin-top: 62px;
+  margin-left: 90px;
+  align-items: center;
+  & img {
+    height: 15px;
+    width: 15px;
+  }
+  & p {
+    padding-left: 5px;
+  }
+  font-size: 15px;
 `;
-const Price_container = styled.div`
 
-display: flex;
+
+const Container1 = styled.div`
+  width: 240px;
+  height: 60px;
+  font-size: 28px;
+  font-weight: 700;
+  & span {
+    display: flex;
+    color: #46A358;
+    font-size: 22px;
+    margin-top: 20px;
+  }
 `;
+
+
+const PriceContainer = styled.div`
+  display: flex;
+`;
+
+
 const Description = styled.div`
-padding-top: 15px;
-font-size: 15px;
+  padding-top: 15px;
+  font-size: 15px;
+  width: 570px;
+  line-height: 24px;
 
-width: 570px;
-line-height: 24px;
+  & h3 {
+    font-weight: 400;
+  }
 
-& h3{
-  font-weight: 400;
-}
-
-& p {
-  font-size: 14px;
-  font-weight: 300;
-  padding-top: 10px;
-}
+  & p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 10px;
+  }
 `;
+
 const Size = styled.div`
-
-font-size: 16px;
-font-weight: 600;
-margin-top: 25px;
-& span{ 
-  display:inline-block;
-  letter-spacing: 15px;
-}
-
-`;
-const Buy = styled.div`
-
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
+  & span {
+    display: inline-block;
+    letter-spacing: 15px;
+  }
 `;
 
-const Button_t = styled.button`
-font-weight: 400;
-font-size: 16px;
-height: 30px;
-width: 30px;
-border-radius: 20px;
-margin-right: 10px;
-color: #444444;
-background-color: #ffffff;
-border-color: #EAEAEA;
-border-style: solid;
-margin-top:10px;
+const ButtonT = styled.button`
+  font-weight: 400;
+  font-size: 16px;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+  color: #444444;
+  background-color: #ffffff;
+  border: 1px solid #EAEAEA;
+  margin-top: 10px;
 `;
 
 const Piece = styled.div`
-display: flex;
-font-size: 16px;
-font-weight: 600;
-margin-top: 26px;
-& span{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-`;
-
-
-
-const Button_t1 = styled.button`
-
-font-weight: 500;
-font-size: 25px;
-height: 34px;
-width: 34px;
-border-radius: 20px;
-color: white;
-background-color: #46A358;
-border-color: #46A358;
-border-style: solid;
-
-
-& span {
   display: flex;
-  font-size: 2rem;
-  width: 50px;
-  text-align: center;
-  
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 26px;
+  & span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+  }
+`;
+
+const ButtonT1 = styled.button`
+  font-weight: 500;
+  font-size: 25px;
+  height: 34px;
+  width: 34px;
+  border-radius: 20px;
+  color: white;
+  background-color: #46A358;
+  border: 1px solid #46A358;
+
+  & span {
+    display: flex;
+    font-size: 2rem;
+    width: 50px;
+    text-align: center;
+    align-items: center;
+  }
+`;
+
+const OffsetContainer = styled.div`
+  display: flex;
+`;
+
+const ButtonT2 = styled.button`
+  margin-left: 25px;
+  font-weight: 700;
+  height: 34px;
+  width: 140px;
+  border-radius: 9px;
+  color: white;
+  background-color: #46A358;
+  border: 1px solid #46A358;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
   align-items: center;
-}
+
+  &:hover {
+    border-color: #378045;
+  }
 `;
 
-const Offset_container = styled.div`
-
-display: flex;
+const ButtonT3 = styled.button`
+  margin-left: 10px;
+  font-weight: 700;
+  height: 41px;
+  width: 160px;
+  border-radius: 9px;
+  color: #46A358;
+  background-color: white;
+  border: 1px solid #46A358;
 `;
 
-const Button_t2 = styled.button`
-margin-left: 25px;
-font-weight: 700;
-height: 34px;
-width: 140px;
-border-radius: 9px;
-color: white;
-background-color: #46A358;
-border-color: #46A358;
-border-style: solid;
-text-decoration: none;
-display: flex;
-justify-content: center;
-align-items: center;  
-& hover{
-  border-color: #378045;
-}
-
+const ButtonT4 = styled.button`
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 400;
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  color: #46A358;
+  background-color: white;
+  border: 1px solid #46A358;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
-const Button_t3 = styled.button`
-margin-left: 10px;
-font-weight: 700;
-height: 41px;
-width: 160px;
-border-radius: 9px;
-color: #46A358;
-background-color: white;
-border-color: #46A358;
-border-style: solid;
+const ContainerEnd = styled.div`
+  word-break: break-all;
+  font-size: 15px;
+  margin-top: 20px;
 `;
 
-const Button_t4 = styled.button`
-font-size: 25px;
-margin-left: 10px;
-font-weight: 400;
-height: 40px;
-width: 40px;
-border-radius: 6px;
-color: #46A358;
-background-color: white;
-border-color: #46A358;
-border-style: solid;
-display: flex;
-justify-content: center;
-align-items: center;
+const End = styled.div`
+  color: #A5A5A5;
+
+  & span {
+    color: #727272;
+  }
 `;
 
-const Container_end = styled.div`
-word-break: break-all;
-font-size:15px;
-margin-top: 20px;
+const BuyNow = styled.div`
+  float: right;
 `;
-
-const End1 = styled.div`
-color: #A5A5A5;
-
-& span{
-  color: #727272;
-}
-`;
-
-const End2 = styled.div`
-color: #A5A5A5;
-
-& span{
-  color: #727272;
-}
-`;
-
-const End3 = styled.div`
-color: #A5A5A5;
-
-& span{
-  color: #727272;
-}
-`;
-
-const Buy_now = styled.div`
-float: right;
-`;
-
-
 
 function View() {
   const [value, setValue] = useState(1);
@@ -280,75 +241,79 @@ function View() {
   const decrement = () => {
     setValue(value > 1 ? value - 1 : 1);
   };
+
   return (
     <Container>
-      <Offset_container>
+      <OffsetContainer>
         <Photos>
           <Column>
-            <div><img src={photo_1} alt="" /></div>
-            <div><img src={photo_2} alt="" /></div>
+            <div><img src={photo_1} alt="Additional photo 1" /></div>
+            <div><img src={photo_2} alt="Additional photo 2" /></div>
           </Column>
-          <Main_photo>
-            <img src={photo_m} alt="" />
-          </Main_photo>
+          <MainPhoto>
+            <img src={photo_m} alt="Main product photo" />
+          </MainPhoto>
         </Photos>
         <Details>
-          <Price_container>
-            <Container_1>
+          <PriceContainer>
+            <Container1>
               <Name>Barberton Daisy</Name>
-              <span><p>$</p><Price>119.00</Price></span>
-            </Container_1>
+              <span>
+                <p>$</p><Price>119.00</Price>
+              </span>
+            </Container1>
             <Review>
               <Stars>
-                <img src={stare} alt="" />
-                <img src={stare} alt="" />
-                <img src={stare} alt="" />
-                <img src={stare} alt="" />
-                <img src={stard} alt="" />
+                <img src={stare} alt="Star" />
+                <img src={stare} alt="Star" />
+                <img src={stare} alt="Star" />
+                <img src={stare} alt="Star" />
+                <img src={stard} alt="Half star" />
                 <p>19 Customer Review</p>
               </Stars>
             </Review>
-          </Price_container>
-          <Line></Line>
+          </PriceContainer>
+          <Line />
           <Description>
             <h3>Short Description:</h3>
-            <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
+            <p>
+              The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+            </p>
           </Description>
           <Size>
             <p>Size:</p>
             <span>
-              <Button_t>S</Button_t>
-              <Button_t>M</Button_t>
-              <Button_t>L</Button_t>
-              <Button_t>XL</Button_t>
+              <ButtonT>S</ButtonT>
+              <ButtonT>M</ButtonT>
+              <ButtonT>L</ButtonT>
+              <ButtonT>XL</ButtonT>
             </span>
           </Size>
-          
           <Piece>
             <span>
-              <Button_t1 onClick={decrement}>-</Button_t1>
+              <ButtonT1 onClick={decrement}>-</ButtonT1>
               <span>{value}</span>
-              <Button_t1 onClick={increment}>+</Button_t1>
+              <ButtonT1 onClick={increment}>+</ButtonT1>
             </span>
-            <Buy_now>
-              <Button_t2 as={Link} to="basket">BUY NOW</Button_t2>
-            </Buy_now>
+            <BuyNow>
+              <ButtonT2 as={Link} to="basket">BUY NOW</ButtonT2>
+            </BuyNow>
             <span>
-              <Button_t3>ADD TO CART</Button_t3>
+              <ButtonT3>ADD TO CART</ButtonT3>
             </span>
             <span>
-              <Button_t4><img src={Heart} alt="" /></Button_t4>
+              <ButtonT4><img src={Heart} alt="Wishlist" /></ButtonT4>
             </span>
           </Piece>
-          <Container_end>
-            <End1>SKU: <span>1995751877966</span></End1>
-            <End2>Categories: <span> Potter Plants</span></End2>
-            <End3>Tags: <span>Home, Garden, Plants</span></End3>
-          </Container_end>
+          <ContainerEnd>
+            <End>SKU: <span>1995751877966</span></End>
+            <End>Categories: <span>Potter Plants</span></End>
+            <End>Tags: <span>Home, Garden, Plants</span></End>
+          </ContainerEnd>
         </Details>
-      </Offset_container>
+      </OffsetContainer>
     </Container>
-  )
+  );
 }
 
-export default View
+export default View;
