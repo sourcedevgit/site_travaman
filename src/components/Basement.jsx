@@ -23,7 +23,7 @@ border-radius: 15px;
 const Ph = styled.div`
 & button {
         background-color: #46A358;
-    }
+  }    
 & img {
         height: 292px;
         width: 292px;
@@ -69,7 +69,9 @@ const ShopButton = styled.button`
     align-items: center;
     font-size: 14;
     font-weight: 500;
-    
+    &:hover {
+    background-color: #378045;
+  }    
 `;
 const InnerContainer1 = styled.div`
 display: flex;

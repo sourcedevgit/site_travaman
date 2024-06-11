@@ -154,7 +154,10 @@ const ButtonT1 = styled.button`
   color: white;
   background-color: #46A358;
   border: 1px solid #46A358;
-
+  &:hover {
+    background-color: #75b682;
+    border: 1px solid #75b682;
+  } 
   & span {
     display: flex;
     font-size: 2rem;
@@ -183,19 +186,22 @@ const ButtonT2 = styled.button`
   align-items: center;
 
   &:hover {
-    border-color: #378045;
+    background-color: #378045;
   }
 `;
 
 const ButtonT3 = styled.button`
   margin-left: 10px;
   font-weight: 700;
-  height: 41px;
+  height: 38px;
   width: 160px;
   border-radius: 9px;
   color: #46A358;
   background-color: white;
   border: 1px solid #46A358;
+  &:hover {
+    border-color: #9cbea3;
+  }    
 `;
 
 const ButtonT4 = styled.button`

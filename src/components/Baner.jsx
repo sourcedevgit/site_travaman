@@ -53,8 +53,12 @@ font-size:14px;
 const Text_Container = styled.div`
 
 & button {
-        background-color: #46A358;
+    background-color: #46A358;
+    &:hover {
+    background-color: #378045;
+  }    
     }
+
 `;
 
 const ShopButton = styled.button`

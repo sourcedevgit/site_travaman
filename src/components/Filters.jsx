@@ -116,6 +116,9 @@ const ShopButton = styled.button`
     align-items: center;
     font-size: 16;
     font-weight: 700;
+&:hover {
+    background-color: #378045;
+  }    
     
 `;
 
