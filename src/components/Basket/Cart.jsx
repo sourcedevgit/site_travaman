@@ -1,4 +1,3 @@
-// Cart.jsx
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { BasketContext } from './BasketContext'; // Adjust the import path accordingly
@@ -78,7 +77,7 @@ const Text = styled.div`
 `;
 
 function Cart() {
-  const { allCost } = useContext(BasketContext);
+  const { allCost, discount, shipping } = useContext(BasketContext);
 
   return (
     <Container>
@@ -90,13 +89,13 @@ function Cart() {
           <p>Subtotal </p><span>${allCost}.00</span>
         </Point>
         <Point>
-          <p>Coupon Discount </p><span>(-) $0.00</span>
+          <p>Coupon Discount </p><span>-{discount}%</span>
         </Point>
         <Point>
-          <p>Shipping </p><span>$0.00</span>
+          <p>Shipping </p><span>${shipping}.00</span>
         </Point>
         <Point_end>
-          <p>Total </p><span>${allCost}.00</span>
+          <p>Total </p><span>${(allCost - ((allCost*discount)/100) + shipping).toFixed(2)}</span>
         </Point_end>
         <Button1>Proceed To Checkout</Button1>
         <Text>Continue Shopping</Text>

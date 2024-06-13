@@ -1,8 +1,7 @@
-// BasketCard.jsx
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { BasketContext } from './BasketContext'; // Adjust the import path accordingly
-import bas1 from "/bas1.png";
+import bas1 from '/bas1.png';
 
 const Card = styled.div`
   display: grid;
@@ -12,7 +11,7 @@ const Card = styled.div`
   align-items: center;
   width: 1000px;
   height: 80px;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   border-radius: 15px;
 
   & img {
@@ -24,14 +23,14 @@ const Card = styled.div`
 
 const Name = styled.div`
   font-size: 14px;
-  color: #3D3D3D;
+  color: #3d3d3d;
 
   & span {
     color: #727272;
   }
 
   & p {
-    color: #3D3D3D;
+    color: #3d3d3d;
     font-weight: 600;
     font-size: 16px;
   }
@@ -45,7 +44,7 @@ const Price = styled.div`
 const Total = styled.div`
   font-size: 16px;
   font-weight: 700;
-  color: #46A358;
+  color: #46a358;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,8 +70,8 @@ const Button_t1 = styled.button`
   width: 22px;
   border-radius: 20px;
   color: white;
-  background-color: #46A358;
-  border-color: #46A358;
+  background-color: #46a358;
+  border-color: #46a358;
   border-style: solid;
 
   &:hover {
