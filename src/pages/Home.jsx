@@ -20,8 +20,6 @@ export const Home = () => {
         <Basement/>
         <Blog/>
         <End/>
-        
-
     </div>
     
   )
