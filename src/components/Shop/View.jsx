@@ -130,6 +130,10 @@ const ButtonT = styled.button`
   background-color: #ffffff;
   border: 1px solid #EAEAEA;
   margin-top: 10px;
+  &:hover {
+    background-color: #738a77;
+    border: 1px solid #738a77;
+  } 
 `;
 
 const Piece = styled.div`
@@ -259,8 +263,8 @@ function View() {
       <OffsetContainer>
         <Photos>
           <Column>
-            <div><img src={photo_1} alt="Additional photo 1" /></div>
-            <div><img src={photo_2} alt="Additional photo 2" /></div>
+            <img src={photo_1} alt="Additional photo 1" />
+            <img src={photo_2} alt="Additional photo 2" />
           </Column>
           <MainPhoto>
             <img src={photo_m} alt="Main product photo" />

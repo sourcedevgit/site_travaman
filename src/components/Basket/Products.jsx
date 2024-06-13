@@ -13,16 +13,10 @@ padding-top: 70px;
 const Header = styled.div`
 display: grid;
 grid-template-columns: 500px 1fr ;
-& div{
-   
-}
  & span{
     display: grid;
-    grid-template-columns: 200px 200px 10px;
+    grid-template-columns: 163px 207px 10px;
  }
-& p{
-
-}
 `;
 const Container_Product = styled.div`
 
