@@ -219,6 +219,10 @@ const ButtonT4 = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover {
+    background-color: #d6d6d6;
+    border: 1px solid #286634;
+  } 
 `;
 
 const ContainerEnd = styled.div`
