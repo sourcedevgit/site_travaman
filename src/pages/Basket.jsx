@@ -14,7 +14,6 @@ function Basket() {
       <Interested />
       <End />
     </div>
-
   )
 }
 

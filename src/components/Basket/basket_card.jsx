@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 import bas1 from "/bas1.png";
@@ -14,22 +14,22 @@ height: 80px;
 background-color: #FBFBFB;
 border-radius: 15px;
 
-& img{
+& img {
     margin-left: 10px;
-    width:60px;
-    height:60px;
+    width: 60px;
+    height: 60px;
 }
 `;
-
 
 const Name = styled.div`
 font-size: 14px;
 color: #3D3D3D;
-& span{
+
+& span {
     color: #727272;
 }
 
-& p{
+& p {
     color: #3D3D3D;
     font-weight: 600;
     font-size: 16px;
@@ -42,7 +42,7 @@ margin-left: 100px;
 `;
 
 const Total = styled.div`
-font-size:16px;
+font-size: 16px;
 font-weight: 700;
 color: #46A358;
 display: flex;
@@ -51,7 +51,7 @@ align-items: center;
 `;
 
 const Quantity = styled.div`
-& span{
+& span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +64,6 @@ padding-right: 10px;
 `;
 
 const Button_t1 = styled.button`
-
 font-weight: 500;
 font-size: 16px;
 height: 22px;
@@ -74,57 +73,60 @@ color: white;
 background-color: #46A358;
 border-color: #46A358;
 border-style: solid;
+
 &:hover {
     background-color: #286634;
     border: 1px solid #286634;
-  } 
+} 
 
 & span {
-  display: flex;
-  font-size: 2rem;
-  width: 50px;
-  text-align: center;
-  
-  align-items: center;
+    display: flex;
+    font-size: 2rem;
+    width: 50px;
+    text-align: center;
+    align-items: center;
 }
 `;
 
-
-function basket_card() {
+function BasketCard() {
     const [value, setValue] = useState(1);
+    const [allCost, setAllCost] = useState(119); // Initial value for one item
+    const cost = 119;
+
+    useEffect(() => {
+        setAllCost(cost * value);
+    }, [value]);
 
     const increment = () => {
-      setValue(value + 1);
+        setValue(value + 1);
     };
-  
+
     const decrement = () => {
-      setValue(value > 1 ? value - 1 : 1);
+        setValue(value > 1 ? value - 1 : 1);
     };
-  return (
-    
-    <Card>
-        <img src={bas1} alt="basket" />
-        <Name>
-            <p>Barberton Daisy</p>
-            <span>SKU:1 995751877966</span>
-        </Name>
-        <Price>
-            $<span>119.00</span>
-        </Price>
-        <Quantity>
-            <span>
-                <Button_t1 onClick={decrement}>-</Button_t1>
-              <Value>{value}</Value>
-              <Button_t1 onClick={increment}>+</Button_t1>
-            </span>
-        </Quantity>
-        <Total>
-            $<p>238.00</p>
-        </Total>
-    </Card>
 
-
-  )
+    return (
+        <Card>
+            <img src={bas1} alt="basket" />
+            <Name>
+                <p>Barberton Daisy</p>
+                <span>SKU: 1995751877966</span>
+            </Name>
+            <Price>
+                $<span>{cost}.00</span>
+            </Price>
+            <Quantity>
+                <span>
+                    <Button_t1 onClick={decrement}>-</Button_t1>
+                    <Value>{value}</Value>
+                    <Button_t1 onClick={increment}>+</Button_t1>
+                </span>
+            </Quantity>
+            <Total>
+                $<p>{allCost}.00</p>
+            </Total>
+        </Card>
+    );
 }
 
-export default basket_card
+export default BasketCard;
