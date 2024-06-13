@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import { BasketContext } from './BasketContext'; // Adjust the import path accordingly
+import { BasketContext } from './BasketContext'; 
 
 const Container = styled.div`
   display: flex;

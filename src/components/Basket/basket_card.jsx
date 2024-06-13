@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import { BasketContext } from './BasketContext'; // Adjust the import path accordingly
+import { BasketContext } from './BasketContext'; 
 import bas1 from '/bas1.png';
 
 const Card = styled.div`
