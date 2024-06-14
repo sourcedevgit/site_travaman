@@ -26,9 +26,7 @@ npm install styled-components
 ```
 npm install react-animated-css
 ```
-```
-npm install react-animated-css
-```
+
 запуск:
 ```
 npm run dev
