@@ -6,7 +6,7 @@ import Location from "/End/Location.svg";
 import Message from "/End/Message.svg"; 
 
 const Container = styled.div`
-margin-top: 138px;
+margin-top: 158px;
 height: 85px;
 
 background-color: #46a35947;

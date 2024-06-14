@@ -9,6 +9,7 @@ import flov4 from "/flov4.png"
 const Container = styled.div`
 padding-top:121px;
 text-align:center;
+height: 500px;
 `;
 
 const InnerContainer = styled.div`

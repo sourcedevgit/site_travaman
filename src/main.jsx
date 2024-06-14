@@ -7,6 +7,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BasketProvider>
     <App />
-  </BasketProvider>,
-  </React.StrictMode>,
+  </BasketProvider>
+  </React.StrictMode>
 )
