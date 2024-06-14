@@ -1,6 +1,6 @@
 # travaman
 
-<h3>сайт типо для продажи растений еее</h3>
+<h3>Cайт для продажи растений </h3>
 <img src="https://github.com/sourcedevgit/site_travaman/assets/73057608/5d664c11-c147-4b42-ace3-c34b89bcd586">
 
 
@@ -8,6 +8,29 @@
 ```
 git clone https://github.com/sourcedevgit/site_travaman.git
 ```
+```
+npm install
+```
+```
+npm install react-range-slider-input
+```
+```
+npm install react-router-dom
+```
+```
+npm install styled-components
+```
+```
+npm install react-animated-css
+```
+```
+npm install react-animated-css
+```
+запуск:
+```
+npm run dev
+```
+
 <h3>День 1</h3>
 <h4>Определились с темой макета/сайта им стал магазин растений,начали совершенствовать макет на фигме,слушали теорию,сделали 23 задачи<h4> 
 <h3>День 2</h3>
