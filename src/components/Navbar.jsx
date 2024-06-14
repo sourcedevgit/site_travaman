@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Animated} from "react-animated-css";
+import { Link } from 'react-router-dom';
+
 import basket from "/basket.svg"; 
 import trava from "/trava.svg"; 
 import search from "/search.svg"; 
@@ -90,7 +92,7 @@ const LoginButton = styled.button`
 `;
 
 
-const ButtonLink = styled.link`
+const Bl = styled.button`
 
 `;
 
@@ -113,7 +115,10 @@ export const Navbar = () => {
         </ButtonContainer>  
         <SbContainer>
           <img src={search} alt="Search" />
+          <Bl as={Link} to="../basket" >
           <img src={basket} alt="Basket" />
+          </Bl>
+          
           <LoginButton>
             <img src={Login} alt="Login" />
             <p>Login</p>
