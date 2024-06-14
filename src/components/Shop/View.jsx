@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import {Animated} from "react-animated-css";
 
 import photo_m from "/products/product1/main.png";
 import photo_1 from "/products/product1/1.png";
@@ -280,7 +281,10 @@ function View() {
               <ButtonT1 onClick={increment}>+</ButtonT1>
             </span>
             <BuyNow>
+            <Animated animationIn="tada" animationOut="fadeOut" isVisible={true} animationInDelay={500}>
               <ButtonT2 as={Link} to="basket">BUY NOW</ButtonT2>
+            </Animated>
+              
             </BuyNow>
             <span>
               <ButtonT3>ADD TO CART</ButtonT3>
