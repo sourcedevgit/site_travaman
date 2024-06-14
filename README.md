@@ -9,6 +9,9 @@
 git clone https://github.com/sourcedevgit/site_travaman.git
 ```
 ```
+cd site_travaman
+```
+```
 npm install
 ```
 ```
