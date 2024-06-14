@@ -182,6 +182,7 @@ const ButtonT3 = styled.button`
   background-color: white;
   border: 1px solid #46A358;
   &:hover {
+    color: white;
     background-color: #286634;
     border: 1px solid #286634;
   } 
@@ -201,7 +202,7 @@ const ButtonT4 = styled.button`
   justify-content: center;
   align-items: center;
   &:hover {
-    background-color: #d6d6d6;
+    background-color: #286634;
     border: 1px solid #286634;
   } 
 `;
