@@ -109,38 +109,14 @@ const Description = styled.div`
   }
 `;
 
-const Size = styled.div`
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 25px;
-  & span {
-    display: inline-block;
-    letter-spacing: 15px;
-  }
-`;
 
-const ButtonT = styled.button`
-  font-weight: 400;
-  font-size: 16px;
-  height: 30px;
-  width: 30px;
-  border-radius: 20px;
-  margin-right: 10px;
-  color: #444444;
-  background-color: #ffffff;
-  border: 1px solid #EAEAEA;
-  margin-top: 10px;
-  &:hover {
-    background-color: #738a77;
-    border: 1px solid #738a77;
-  } 
-`;
+
 
 const Piece = styled.div`
   display: flex;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 26px;
+  margin-top: 41px;
   & span {
     display: flex;
     align-items: center;
@@ -260,6 +236,7 @@ function View() {
 
   return (
     <Container>
+
       <OffsetContainer>
         <Photos>
           <Column>
@@ -296,15 +273,6 @@ function View() {
               The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
             </p>
           </Description>
-          <Size>
-            <p>Size:</p>
-            <span>
-              <ButtonT>S</ButtonT>
-              <ButtonT>M</ButtonT>
-              <ButtonT>L</ButtonT>
-              <ButtonT>XL</ButtonT>
-            </span>
-          </Size>
           <Piece>
             <span>
               <ButtonT1 onClick={decrement}>-</ButtonT1>

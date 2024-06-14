@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import {Animated} from "react-animated-css";
 import basket from "/basket.svg"; 
 import trava from "/trava.svg"; 
 import search from "/search.svg"; 
 import Login from "/Login.svg"; 
 
-// Styled components
+
 const Container = styled.div`
 
 `;
@@ -97,7 +97,8 @@ const ButtonLink = styled.link`
 
 export const Navbar = () => {
   return (
-    <Container>
+<Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
+<Container> 
       <InnerContainer>
         <Logobox>
           <Logo  src={trava} alt="Logo" />
@@ -120,6 +121,11 @@ export const Navbar = () => {
         </SbContainer>
       </InnerContainer>
     </Container>
+        </Animated>
+
+        
+    
+    
   );
 }
 

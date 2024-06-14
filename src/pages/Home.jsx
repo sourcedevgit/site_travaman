@@ -9,12 +9,11 @@ import End from '../components/End'
 
 
 
-
-
 export const Home = () => {
   return (
     <div>
-        <Navbar/>
+        
+        <Navbar />
         <Baner/>
         <Items_component/>
         <Basement/>

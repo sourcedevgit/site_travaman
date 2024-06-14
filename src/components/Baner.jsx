@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import {Animated} from "react-animated-css";
 import plants from "/plants.png"
 
 const Container = styled.div`
@@ -80,24 +80,25 @@ const ShopButton = styled.button`
 
 function Baner() {
   return (
-<Container>
-    <InnerContainer>
-        <Text_Container>
-            <Text1>
-            Welcome to TRAVAMAN
-            </Text1>
-            <Text2>
-            Let’s Make a Better <span>Planet</span> 
-            </Text2>
-            <Text3>
-            We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!
-            </Text3>
-            <ShopButton>SHOP NOW</ShopButton>
-        </Text_Container>
-        <img src={plants} alt="Plants" />
-    </InnerContainer>
-</Container>
-    
+    <Animated animationIn="fadeInRight" animationOut="fadeOut" isVisible={true}>
+        <Container>
+            <InnerContainer>
+                <Text_Container>
+                    <Text1>
+                    Welcome to TRAVAMAN
+                    </Text1>
+                    <Text2>
+                    Let’s Make a Better <span>Planet</span> 
+                    </Text2>
+                    <Text3>
+                    We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!
+                    </Text3>
+                    <ShopButton>SHOP NOW</ShopButton>
+                </Text_Container>
+                <img src={plants} alt="Plants" />
+            </InnerContainer>
+        </Container>
+    </Animated>
   )
 }
 

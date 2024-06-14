@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Item from './Item';
 import Filtres from './Filters';
 import itemsData from './items.json'; 
-
+import {Animated} from "react-animated-css";
 const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -20,18 +20,21 @@ function ItemsComponent() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-
     setItems(itemsData);
   }, []);
 
   return (
     <Container>
-      <Filtres />
-      <GridContainer>
+       <Animated animationIn="fadeInLeft" animationOut="fadeOut" isVisible={true} >
+        <Filtres />
+       </Animated>
+      <Animated animationIn="fadeInUpBig" animationOut="fadeOut" isVisible={true}>
+       <GridContainer>
         {items.map(item => (
-          <Item key={item.id} name={item.name} price={item.price} image={item.image} />
+            <Item key={item.id} name={item.name} price={item.price} image={item.image} />
         ))}
-      </GridContainer>
+      </GridContainer> 
+      </Animated>
     </Container>
   );
 }

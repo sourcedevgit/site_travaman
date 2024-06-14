@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-
 const Container = styled(Link)`
   width: 258px;
   height: 320px;
@@ -37,12 +36,16 @@ const Card = styled.div`
 
 function Item({ name, price, image }) {
   return (
-    <Container to="shop">
+
+      <Container to="shop">
       <Card>
         <img src={image} alt={name} />
         <p>{name}</p><span>{price}</span>
       </Card>
     </Container>
+
+          
+
   );
 }
 
